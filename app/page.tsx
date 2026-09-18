@@ -212,25 +212,58 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="partners shell section" id="partners">
-        <div className="section-head partner-head">
-          <div>
-            <p className="section-kicker">DRINKS BY OUR PARTNERS</p>
-            <h2>GOOD NIGHTS<br />NEED GOOD DRINKS.</h2>
-          </div>
-          <p>
-            Ausgewählte Beverage-Partner sorgen für Drinks und Specials, die zum Abend passen. Weitere Partner folgen.
-          </p>
-        </div>
-
-        <div className="partner-list">
-          {partners.map((partner, index) => (
-            <div className="partner-row" key={partner}>
-              <span>{String(index + 1).padStart(2, "0")}</span>
-              <strong>{partner}</strong>
-              <span>↗</span>
+      <section className="partners-banner section" id="partners">
+        <div className="shell">
+          <div className="partner-banner-head">
+            <div>
+              <p className="section-kicker light">OFFICIAL PARTNERS</p>
+              <h2>POWERING<br />THE NIGHT.</h2>
             </div>
-          ))}
+            <p>
+              Ausgewählte Beverage-Partner begleiten den NIGHT LIGHT BAZAAR und sorgen
+              für Drinks, Energy und Aperitivo während des Abends.
+            </p>
+          </div>
+
+          <div className="sponsor-grid" aria-label="Partner des Night Light Bazaar">
+            <div className="sponsor-tile">
+              <img
+                src="https://cdn.tasteatlas.com/images/productmakers/9725835d3361422394b89d737225728d.png?h=656&w=700"
+                alt="Anheuser-Busch"
+                loading="lazy"
+                referrerPolicy="no-referrer"
+              />
+            </div>
+            <div className="sponsor-tile">
+              <img
+                src="https://toppng.com/uploads/preview/red-bull-11526060408vstbabbj8x.png"
+                alt="Red Bull"
+                loading="lazy"
+                referrerPolicy="no-referrer"
+              />
+            </div>
+            <div className="sponsor-tile">
+              <img
+                src="https://cdn.kibrispdr.org/data/45/fritz-kola-logo-15.png"
+                alt="fritz-kola"
+                loading="lazy"
+                referrerPolicy="no-referrer"
+              />
+            </div>
+            <div className="sponsor-tile">
+              <img
+                src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Aperol_Logo.svg"
+                alt="Aperol"
+                loading="lazy"
+                referrerPolicy="no-referrer"
+              />
+            </div>
+          </div>
+
+          <div className="sponsor-footer">
+            <span>BEVERAGE PARTNERS · EDITION 01</span>
+            <span>MORE PARTNERS TO BE ANNOUNCED</span>
+          </div>
         </div>
       </section>
 
