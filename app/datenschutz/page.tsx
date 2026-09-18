@@ -4,7 +4,7 @@ export default function DatenschutzPage() {
       <header className="nav-wrap">
         <nav className="nav shell">
           <a className="brand" href="/" aria-label="Night Light Bazaar Startseite">
-            <img src="/brand-mark.svg" alt="" />
+            <img src="/favicon.png" alt="" />
             <span>NIGHT LIGHT<small>BAZAAR</small></span>
           </a>
           <a className="pill pill-small" href="/">ZUR STARTSEITE</a>
@@ -43,7 +43,7 @@ export default function DatenschutzPage() {
 
       <footer className="footer">
         <div className="shell footer-inner">
-          <a className="brand footer-brand" href="/"><img src="/brand-mark.svg" alt="" /><span>NIGHT LIGHT<small>BAZAAR</small></span></a>
+          <a className="brand footer-brand" href="/"><img src="/favicon.png" alt="" /><span>NIGHT LIGHT<small>BAZAAR</small></span></a>
           <div className="footer-links"><a href="/impressum">Impressum</a><a className="is-active" href="/datenschutz">Datenschutz</a></div>
           <a className="footer-back" href="/">STARTSEITE ↑</a>
         </div>
