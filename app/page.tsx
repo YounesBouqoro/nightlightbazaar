@@ -99,12 +99,77 @@ export default function Home() {
 
 
       <nav className="mobile-quick-nav" aria-label="Schnellnavigation">
-        <a href="#concept">Concept</a>
-        <a href="#experience">Experience</a>
-        <a href="#selection">Selection</a>
-        <a href="#partners">Partner</a>
-        <a href="#event">Event</a>
+        <a href="#mobile-about">About</a>
+        <a href="#mobile-experience">Experience</a>
+        <a href="#mobile-event">Event</a>
+        <a href="#mobile-partners">Partner</a>
       </nav>
+
+
+      <section className="mobile-landing" aria-label="Night Light Bazaar Mobile">
+        <section className="mobile-intro-card" id="mobile-about">
+          <div className="shell">
+            <p className="mobile-label">NIGHT LIGHT BAZAAR</p>
+            <h2>NIGHT MARKET.<br />AFTER DARK.</h2>
+            <p className="mobile-lead">Vintage, Streetwear, Sneakers, Musik, Food & Drinks — als modernes Night-Market-Erlebnis in Düsseldorf.</p>
+            <div className="mobile-tags" aria-label="Highlights">
+              <span>VINTAGE</span><span>STREETWEAR</span><span>SNEAKERS</span><span>MUSIC</span><span>FOOD & DRINKS</span>
+            </div>
+          </div>
+        </section>
+
+        <section className="mobile-experience-section" id="mobile-experience">
+          <div className="shell">
+            <p className="mobile-label">THE EXPERIENCE</p>
+            <h2>WHAT TO EXPECT.</h2>
+            <div className="mobile-feature-list">
+              <article><span>01</span><div><h3>SHOP</h3><p>Kuratiertes Vintage, Streetwear und besondere Pieces.</p></div></article>
+              <article><span>02</span><div><h3>MUSIC</h3><p>DJ-Sets und entspannte Nightlife-Atmosphäre.</p></div></article>
+              <article><span>03</span><div><h3>FOOD & DRINKS</h3><p>Streetfood, Coffee, Matcha und ausgewählte Drinks.</p></div></article>
+              <article><span>04</span><div><h3>CONNECT</h3><p>Entdecken, Leute treffen und gemeinsam den Abend erleben.</p></div></article>
+            </div>
+          </div>
+        </section>
+
+        <section className="mobile-event-section" id="mobile-event">
+          <div className="shell">
+            <div className="mobile-event-card">
+              <p className="mobile-label light">EVENT INFO · EDITION 01</p>
+              <h2>MEET US<br />AFTER DARK.</h2>
+              <div className="mobile-event-facts">
+                <div><small>WHEN</small><strong>DATE TBA</strong></div>
+                <div><small>TIME</small><strong>17:00 — 00:00</strong></div>
+                <div><small>WHERE</small><strong>DÜSSELDORF</strong><span>Location wird bekannt gegeben.</span></div>
+              </div>
+              <p className="mobile-event-note">Updates zu Datum, Location und Tickets folgen.</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="mobile-partners-section" id="mobile-partners">
+          <div className="shell">
+            <div className="mobile-partner-head">
+              <p className="mobile-label light">SUPPORTED BY</p>
+              <p>Partner, die den Abend mit Drinks, Energy und Aperitivo begleiten.</p>
+            </div>
+            <div className="mobile-partner-rail" aria-label="Partner">
+              <div><img src="/assets/partners/anheuser-busch.png?v=2" alt="Anheuser-Busch" /></div>
+              <div><img src="/assets/partners/red-bull.png?v=2" alt="Red Bull" /></div>
+              <div><img src="/assets/partners/fritz-kola.png?v=2" alt="fritz-kola" /></div>
+              <div><img src="/assets/partners/aperol.png?v=2" alt="Aperol" /></div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mobile-vendor-section">
+          <div className="shell">
+            <p className="mobile-label">BE PART OF THE NIGHT</p>
+            <h2>JOIN THE BAZAAR.</h2>
+            <p>Du möchtest als Seller, Food-Konzept oder Partner dabei sein?</p>
+            <span className="mobile-coming-soon">APPLICATIONS · COMING SOON</span>
+          </div>
+        </section>
+      </section>
 
       <section className="intro-story section">
         <div className="shell intro-story-grid">
