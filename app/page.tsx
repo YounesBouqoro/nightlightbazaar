@@ -53,10 +53,7 @@ export default function Home() {
             <a href="#partners">Partner</a>
           </div>
 
-          <a className="pill pill-small desktop-header-cta" href="#updates">
-            GET UPDATES
-          </a>
-          <a className="pill pill-small mobile-header-cta" href="#mobile-event">
+          <a className="pill pill-small" href="#event">
             EVENT INFO
           </a>
         </nav>
@@ -116,7 +113,6 @@ export default function Home() {
         <a href="#mobile-whos-there">Who's there</a>
         <a href="#mobile-event">Event</a>
         <a href="#mobile-faq">FAQ</a>
-        <a href="#mobile-updates">Updates</a>
       </nav>
 
 
@@ -211,19 +207,6 @@ export default function Home() {
           </div>
         </section>
 
-
-        <section className="mobile-updates-section" id="mobile-updates">
-          <div className="shell">
-            <p className="mobile-label light">BE THE FIRST TO KNOW</p>
-            <h2>GET THE<br />UPDATES.</h2>
-            <p>Datum, Location, Tickets, DJs und neue Seller — sobald etwas live geht, landet es hier zuerst.</p>
-            <div className="updates-placeholder" aria-label="E-Mail Updates in Vorbereitung">
-              <span>E-MAIL UPDATES</span>
-              <button type="button" disabled>COMING SOON</button>
-            </div>
-            <small>Die Newsletter-Anmeldung wird mit dem Event-Launch freigeschaltet.</small>
-          </div>
-        </section>
 
         <section className="mobile-faq-section" id="mobile-faq">
           <div className="shell">
@@ -428,18 +411,6 @@ export default function Home() {
           <p>ÖPNV-, Fahrrad- und Anreiseinfos folgen direkt mit dem Location Reveal.</p>
         </div>
 
-        <div className="updates-card" id="updates">
-          <div>
-            <p className="section-kicker light">BE THE FIRST TO KNOW</p>
-            <h3>GET THE UPDATES.</h3>
-            <p>Datum, Location, Tickets, DJs und neue Seller — hier zuerst.</p>
-          </div>
-          <div className="updates-placeholder">
-            <span>E-MAIL UPDATES</span>
-            <button type="button" disabled>COMING SOON</button>
-          </div>
-        </div>
-
         <div className="desktop-faq" id="faq">
           <div><p className="section-kicker">GOOD TO KNOW</p><h3>FAQ.</h3></div>
           <div className="faq-list">
@@ -467,7 +438,6 @@ export default function Home() {
         </div>
       </section>
 
-      <a className="mobile-sticky-cta" href="#mobile-updates"><span>GET UPDATES</span><strong>↗</strong></a>
 
       <footer className="footer">
         <div className="shell footer-inner">
