@@ -448,8 +448,8 @@ export default function Home() {
               <small>BAZAAR</small>
             </span>
           </a>
-          <p>DÜSSELDORF · 17:00 — 00:00 · EDITION 01</p>
-          <a href="#top">BACK TO TOP ↑</a>
+          <div className="footer-links"><a href="/impressum">Impressum</a><a href="/datenschutz">Datenschutz</a></div>
+          <a className="footer-back" href="#top">BACK TO TOP ↑</a>
         </div>
       </footer>
     </main>
