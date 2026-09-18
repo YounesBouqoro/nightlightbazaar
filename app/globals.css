@@ -1394,3 +1394,116 @@ summary:focus-visible{
     scroll-margin-top:72px;
   }
 }
+
+
+/* Legal pages + footer legal links */
+.footer-links{
+  display:flex;
+  align-items:center;
+  gap:18px;
+  color:rgba(255,255,255,.5);
+  font-size:8px;
+  font-weight:800;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+.footer-links a{transition:color .18s ease}
+.footer-links a:hover,
+.footer-links a.is-active{color:#fff}
+.footer-back{justify-self:end}
+
+.legal-body{background:var(--paper)}
+.legal-page{min-height:calc(100svh - 76px);padding:84px 0 96px}
+.legal-shell{max-width:980px}
+.legal-page h1{
+  margin:0 0 58px;
+  font-size:clamp(58px,8vw,108px);
+  line-height:.84;
+  letter-spacing:-.065em;
+  font-weight:950;
+}
+.legal-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:22px;
+}
+.legal-grid section,
+.legal-copy section{
+  padding:24px 0;
+  border-top:1px solid var(--line);
+}
+.legal-grid section:last-child{grid-column:1/-1}
+.legal-page h2{
+  margin:0 0 16px;
+  font-size:17px;
+  line-height:1.25;
+  letter-spacing:-.02em;
+}
+.legal-page p{
+  margin:0 0 14px;
+  color:#52566a;
+  font-size:15px;
+  line-height:1.65;
+}
+.legal-page p:last-child{margin-bottom:0}
+.legal-page strong{color:var(--ink)}
+.legal-page a:not(.brand):not(.pill){
+  color:var(--ink);
+  text-decoration:underline;
+  text-decoration-thickness:1px;
+  text-underline-offset:3px;
+}
+.legal-external{font-weight:800}
+.legal-copy{max-width:800px}
+.legal-copy section{padding:28px 0}
+.legal-note{
+  margin-top:54px;
+  padding-top:16px;
+  border-top:1px solid var(--ink);
+  display:flex;
+  justify-content:space-between;
+  gap:24px;
+  color:#777b8d;
+  font-size:8px;
+  font-weight:900;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+
+@media(max-width:700px){
+  body{padding-bottom:0}
+  .footer-inner{
+    grid-template-columns:1fr auto;
+    row-gap:16px;
+  }
+  .footer-links{
+    grid-column:1/-1;
+    grid-row:2;
+    justify-self:start;
+    gap:16px;
+  }
+  .footer-back{
+    grid-column:2;
+    grid-row:1;
+  }
+
+  .legal-page{
+    min-height:0;
+    padding:54px 0 66px;
+  }
+  .legal-page h1{
+    margin-bottom:40px;
+    font-size:clamp(48px,15vw,64px);
+  }
+  .legal-grid{grid-template-columns:1fr;gap:0}
+  .legal-grid section:last-child{grid-column:auto}
+  .legal-grid section,
+  .legal-copy section{padding:22px 0}
+  .legal-page h2{font-size:16px}
+  .legal-page p{font-size:14px;line-height:1.62}
+  .legal-note{
+    margin-top:38px;
+    flex-direction:column;
+    gap:6px;
+  }
+}
