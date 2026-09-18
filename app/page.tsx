@@ -39,7 +39,7 @@ export default function Home() {
       <header className="nav-wrap">
         <nav className="nav shell" aria-label="Hauptnavigation">
           <a className="brand" href="#top" aria-label="Night Light Bazaar Startseite">
-            <img src="/brand-mark.svg" alt="" />
+            <img src="/favicon.png" alt="" />
             <span>
               NIGHT LIGHT
               <small>BAZAAR</small>
@@ -442,7 +442,7 @@ export default function Home() {
       <footer className="footer">
         <div className="shell footer-inner">
           <a className="brand footer-brand" href="#top">
-            <img src="/brand-mark.svg" alt="" />
+            <img src="/favicon.png" alt="" />
             <span>
               NIGHT LIGHT
               <small>BAZAAR</small>
