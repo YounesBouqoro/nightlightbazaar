@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Night Light Bazaar — Düsseldorf after dark",
+  title: "Night Light Bazaar — Night Vintage & Lifestyle Market Düsseldorf",
   description:
-    "Night Shopping, DJs, Food & Drinks in Düsseldorf. 17:00–00:00. Datum und Location folgen.",
+    "Kuratierter Night Vintage & Lifestyle Market in Düsseldorf mit Vintage Fashion, Streetwear, Sneakers, Design, Art, DJ-Sets, Food & Drinks.",
   icons: {
     icon: "/brand-mark.svg",
   },
