@@ -203,16 +203,16 @@ export default function Home() {
 
           <div className="partner-rail" aria-label="Partner des Night Light Bazaar">
             <div className="partner-logo-card">
-              <img src="/assets/partners/anheuser-busch.png" alt="Anheuser-Busch" />
+              <img src="/assets/partners/anheuser-busch.png?v=2" alt="Anheuser-Busch" />
             </div>
             <div className="partner-logo-card">
-              <img src="/assets/partners/red-bull.png" alt="Red Bull" />
+              <img src="/assets/partners/red-bull.png?v=2" alt="Red Bull" />
             </div>
             <div className="partner-logo-card">
-              <img src="/assets/partners/fritz-kola.png" alt="fritz-kola" />
+              <img src="/assets/partners/fritz-kola.png?v=2" alt="fritz-kola" />
             </div>
             <div className="partner-logo-card">
-              <img src="/assets/partners/aperol.png" alt="Aperol" />
+              <img src="/assets/partners/aperol.png?v=2" alt="Aperol" />
             </div>
           </div>
 
