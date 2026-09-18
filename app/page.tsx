@@ -59,54 +59,23 @@ export default function Home() {
         </nav>
       </header>
 
-      <section className="hero shell" id="top">
-        <div className="hero-copy">
-          <div className="eyebrow">
-            <span className="status-dot" />
-            DÜSSELDORF · NIGHT VINTAGE & LIFESTYLE MARKET
-          </div>
+      <section className="brand-hero" id="top">
+        <div className="shell brand-hero-inner">
+          <p className="headline-kicker">AFTER DARK · DÜSSELDORF</p>
 
-          <h1>
-            VINTAGE.
-            <span className="outline">CULTURE.</span>
-            AFTER DARK.
-          </h1>
+          <div className="headline-stage" aria-label="Night Light Bazaar">
+            <div className="headline-moon" />
 
-          <p className="hero-lead">
-            Der moderne, kuratierte Night Vintage & Lifestyle Market in Düsseldorf — Vintage Fashion, Streetwear, Sneakers, Design, Kunst, Musik, Food & Drinks.
-          </p>
+            <h1 className="headline-title">
+              <span className="line solid">NIGHT LIGHT</span>
+              <span className="line outline">BAZAAR</span>
+            </h1>
 
-          <div className="hero-actions">
-            <a className="pill" href="#experience">
-              DISCOVER THE NIGHT
-              <span aria-hidden="true">↘</span>
-            </a>
-            <span className="micro">17:00 — 00:00 · DÜSSELDORF</span>
-          </div>
-        </div>
-
-        <div className="hero-art" aria-label="Night Light Bazaar Visual">
-          <div className="noise" />
-          <div className="arch">
-            <div className="star star-one">✦</div>
-            <div className="star star-two">✦</div>
-            <div className="sun" />
-            <div className="reflection">
-              <span />
-              <span />
-              <span />
-              <span />
-              <span />
+            <div className="hero-meta">
+              <span>17:00 — 00:00</span>
+              <span>NIGHT VINTAGE & LIFESTYLE MARKET</span>
+              <span>DATE TBA</span>
             </div>
-          </div>
-          <div className="art-label">
-            <span>DISCOVER</span>
-            <span>•</span>
-            <span>SHOP</span>
-            <span>•</span>
-            <span>CONNECT</span>
-            <span>•</span>
-            <span>STAY</span>
           </div>
         </div>
       </section>
@@ -125,6 +94,16 @@ export default function Home() {
           <span>STREETWEAR</span><b>✦</b>
           <span>SNEAKERS</span><b>✦</b>
           <span>DESIGN & ART</span><b>✦</b>
+        </div>
+      </section>
+
+      <section className="intro-story section">
+        <div className="shell intro-story-grid">
+          <p className="section-kicker">THE NIGHT LIGHT BAZAAR</p>
+          <p className="intro-story-text">
+            Ein kuratierter Night Vintage & Lifestyle Market in Düsseldorf — irgendwo zwischen Vintage Market,
+            Street Culture, Pop-up Event und Nightlife. Discover. Shop. Connect. Stay for the Night.
+          </p>
         </div>
       </section>
 
@@ -212,57 +191,34 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="partners-banner section" id="partners">
+      <section className="partners-carousel section" id="partners">
         <div className="shell">
-          <div className="partner-banner-head">
+          <div className="partner-carousel-head">
             <div>
               <p className="section-kicker light">OFFICIAL PARTNERS</p>
               <h2>POWERING<br />THE NIGHT.</h2>
             </div>
-            <p>
-              Ausgewählte Beverage-Partner begleiten den NIGHT LIGHT BAZAAR und sorgen
-              für Drinks, Energy und Aperitivo während des Abends.
-            </p>
+            <p>Drinks, Energy und Aperitivo von ausgewählten Partnern — passend zum NIGHT LIGHT BAZAAR.</p>
           </div>
 
-          <div className="sponsor-grid" aria-label="Partner des Night Light Bazaar">
-            <div className="sponsor-tile">
-              <img
-                src="https://cdn.tasteatlas.com/images/productmakers/9725835d3361422394b89d737225728d.png?h=656&w=700"
-                alt="Anheuser-Busch"
-                loading="lazy"
-                referrerPolicy="no-referrer"
-              />
+          <div className="partner-rail" aria-label="Partner des Night Light Bazaar">
+            <div className="partner-logo-card">
+              <img src="/assets/partners/anheuser-busch.png" alt="Anheuser-Busch" />
             </div>
-            <div className="sponsor-tile">
-              <img
-                src="https://toppng.com/uploads/preview/red-bull-11526060408vstbabbj8x.png"
-                alt="Red Bull"
-                loading="lazy"
-                referrerPolicy="no-referrer"
-              />
+            <div className="partner-logo-card">
+              <img src="/assets/partners/red-bull.png" alt="Red Bull" />
             </div>
-            <div className="sponsor-tile">
-              <img
-                src="https://cdn.kibrispdr.org/data/45/fritz-kola-logo-15.png"
-                alt="fritz-kola"
-                loading="lazy"
-                referrerPolicy="no-referrer"
-              />
+            <div className="partner-logo-card">
+              <img src="/assets/partners/fritz-kola.png" alt="fritz-kola" />
             </div>
-            <div className="sponsor-tile">
-              <img
-                src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Aperol_Logo.svg"
-                alt="Aperol"
-                loading="lazy"
-                referrerPolicy="no-referrer"
-              />
+            <div className="partner-logo-card">
+              <img src="/assets/partners/aperol.png" alt="Aperol" />
             </div>
           </div>
 
-          <div className="sponsor-footer">
+          <div className="partner-note">
             <span>BEVERAGE PARTNERS · EDITION 01</span>
-            <span>MORE PARTNERS TO BE ANNOUNCED</span>
+            <span>MORE TO COME</span>
           </div>
         </div>
       </section>
