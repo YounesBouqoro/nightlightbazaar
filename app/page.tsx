@@ -53,7 +53,10 @@ export default function Home() {
             <a href="#partners">Partner</a>
           </div>
 
-          <a className="pill pill-small" href="#event">
+          <a className="pill pill-small desktop-header-cta" href="#updates">
+            GET UPDATES
+          </a>
+          <a className="pill pill-small mobile-header-cta" href="#mobile-event">
             EVENT INFO
           </a>
         </nav>
@@ -98,11 +101,22 @@ export default function Home() {
       </section>
 
 
+
+      <section className="event-snapshot" aria-label="Event auf einen Blick">
+        <div className="shell event-snapshot-grid">
+          <div><small>WHERE</small><strong>DÜSSELDORF</strong></div>
+          <div><small>WHEN</small><strong>DATE TBA</strong></div>
+          <div><small>TIME</small><strong>17:00 — 00:00</strong></div>
+          <div><small>FORMAT</small><strong>NIGHT MARKET</strong></div>
+        </div>
+      </section>
+
       <nav className="mobile-quick-nav" aria-label="Schnellnavigation">
-        <a href="#mobile-about">About</a>
-        <a href="#mobile-experience">Experience</a>
+        <a href="#mobile-experience">Highlights</a>
+        <a href="#mobile-whos-there">Who's there</a>
         <a href="#mobile-event">Event</a>
-        <a href="#mobile-partners">Partner</a>
+        <a href="#mobile-faq">FAQ</a>
+        <a href="#mobile-updates">Updates</a>
       </nav>
 
 
@@ -131,6 +145,20 @@ export default function Home() {
           </div>
         </section>
 
+
+        <section className="mobile-whos-section" id="mobile-whos-there">
+          <div className="shell">
+            <p className="mobile-label">WHO'S THERE?</p>
+            <h2>CURATED PEOPLE.<br />CURATED CONCEPTS.</h2>
+            <div className="mobile-whos-grid">
+              <article><span>SELLERS</span><strong>VINTAGE & STREET</strong><p>Ausgewählte Seller und besondere Pieces.</p></article>
+              <article><span>MUSIC</span><strong>DJs & SOUNDS</strong><p>Line-up wird nach und nach angekündigt.</p></article>
+              <article><span>FOOD</span><strong>FOOD & DRINKS</strong><p>Streetfood, Coffee, Matcha und Drinks.</p></article>
+            </div>
+            <p className="mobile-soon-note">Erste Namen & Brands folgen bald.</p>
+          </div>
+        </section>
+
         <section className="mobile-event-section" id="mobile-event">
           <div className="shell">
             <div className="mobile-event-card">
@@ -143,6 +171,18 @@ export default function Home() {
               </div>
               <p className="mobile-event-note">Updates zu Datum, Location und Tickets folgen.</p>
             </div>
+          </div>
+        </section>
+
+
+        <section className="mobile-arrival-section">
+          <div className="shell mobile-arrival-card">
+            <div>
+              <p className="mobile-label">GETTING THERE</p>
+              <h2>DÜSSELDORF.</h2>
+            </div>
+            <p>Die genaue Location ist noch geheim. ÖPNV-, Fahrrad- und Anreiseinfos folgen direkt mit dem Location Reveal.</p>
+            <span>LOCATION · TBA</span>
           </div>
         </section>
 
@@ -167,6 +207,34 @@ export default function Home() {
                   <div><img src="/assets/partners/aperol.png?v=2" alt="" /></div>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+
+        <section className="mobile-updates-section" id="mobile-updates">
+          <div className="shell">
+            <p className="mobile-label light">BE THE FIRST TO KNOW</p>
+            <h2>GET THE<br />UPDATES.</h2>
+            <p>Datum, Location, Tickets, DJs und neue Seller — sobald etwas live geht, landet es hier zuerst.</p>
+            <div className="updates-placeholder" aria-label="E-Mail Updates in Vorbereitung">
+              <span>E-MAIL UPDATES</span>
+              <button type="button" disabled>COMING SOON</button>
+            </div>
+            <small>Die Newsletter-Anmeldung wird mit dem Event-Launch freigeschaltet.</small>
+          </div>
+        </section>
+
+        <section className="mobile-faq-section" id="mobile-faq">
+          <div className="shell">
+            <p className="mobile-label">GOOD TO KNOW</p>
+            <h2>FAQ.</h2>
+            <div className="faq-list">
+              <details><summary>Brauche ich ein Ticket?</summary><p>Ticket- und Einlassinfos werden mit dem offiziellen Event-Launch veröffentlicht.</p></details>
+              <details><summary>Wo findet der Bazaar statt?</summary><p>In Düsseldorf. Die genaue Location wird zu einem späteren Zeitpunkt bekannt gegeben.</p></details>
+              <details><summary>Was erwartet mich?</summary><p>Vintage, Streetwear, Sneakers, Musik, Food, Drinks und ausgewählte kreative Konzepte.</p></details>
+              <details><summary>Kann ich selbst einen Stand machen?</summary><p>Ja. Bewerbungen für Seller, Brands und Food-Konzepte öffnen bald.</p></details>
+              <details><summary>Wie komme ich hin?</summary><p>ÖPNV-, Fahrrad- und weitere Anreiseinfos folgen zusammen mit der Location.</p></details>
             </div>
           </div>
         </section>
@@ -341,6 +409,49 @@ export default function Home() {
         </div>
       </section>
 
+
+      <section className="desktop-enrichment shell section">
+        <div className="desktop-whos">
+          <div>
+            <p className="section-kicker">WHO'S THERE?</p>
+            <h2>CURATED PEOPLE.<br />CURATED CONCEPTS.</h2>
+          </div>
+          <div className="desktop-whos-grid">
+            <article><span>SELLERS</span><strong>VINTAGE & STREET</strong><p>Ausgewählte Seller und besondere Pieces.</p></article>
+            <article><span>MUSIC</span><strong>DJs & SOUNDS</strong><p>Line-up wird nach und nach angekündigt.</p></article>
+            <article><span>FOOD</span><strong>FOOD & DRINKS</strong><p>Streetfood, Coffee, Matcha und Drinks.</p></article>
+          </div>
+        </div>
+
+        <div className="arrival-card">
+          <div><p className="section-kicker light">GETTING THERE</p><h3>DÜSSELDORF · LOCATION TBA</h3></div>
+          <p>ÖPNV-, Fahrrad- und Anreiseinfos folgen direkt mit dem Location Reveal.</p>
+        </div>
+
+        <div className="updates-card" id="updates">
+          <div>
+            <p className="section-kicker light">BE THE FIRST TO KNOW</p>
+            <h3>GET THE UPDATES.</h3>
+            <p>Datum, Location, Tickets, DJs und neue Seller — hier zuerst.</p>
+          </div>
+          <div className="updates-placeholder">
+            <span>E-MAIL UPDATES</span>
+            <button type="button" disabled>COMING SOON</button>
+          </div>
+        </div>
+
+        <div className="desktop-faq" id="faq">
+          <div><p className="section-kicker">GOOD TO KNOW</p><h3>FAQ.</h3></div>
+          <div className="faq-list">
+            <details><summary>Brauche ich ein Ticket?</summary><p>Ticket- und Einlassinfos werden mit dem offiziellen Event-Launch veröffentlicht.</p></details>
+            <details><summary>Wo findet der Bazaar statt?</summary><p>In Düsseldorf. Die genaue Location wird später bekannt gegeben.</p></details>
+            <details><summary>Was erwartet mich?</summary><p>Vintage, Streetwear, Sneakers, Musik, Food, Drinks und ausgewählte kreative Konzepte.</p></details>
+            <details><summary>Kann ich selbst einen Stand machen?</summary><p>Ja. Bewerbungen für Seller, Brands und Food-Konzepte öffnen bald.</p></details>
+            <details><summary>Wie komme ich hin?</summary><p>Anreiseinfos folgen zusammen mit dem Location Reveal.</p></details>
+          </div>
+        </div>
+      </section>
+
       <section className="vendor shell section">
         <div className="vendor-card">
           <div>
@@ -355,6 +466,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <a className="mobile-sticky-cta" href="#mobile-updates"><span>GET UPDATES</span><strong>↗</strong></a>
 
       <footer className="footer">
         <div className="shell footer-inner">
