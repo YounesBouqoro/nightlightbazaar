@@ -1,27 +1,27 @@
 const experiences = [
   {
     number: "01",
-    title: "SHOP",
-    copy: "Besondere Pieces, Secondhand, Vintage und kleine Labels — entspannt entdecken statt durchhetzen.",
+    title: "DISCOVER",
+    copy: "Vintage Fashion, Streetwear, Sneakers, Design und Kunst — ausgewählt statt beliebig.",
     meta: "CURATED FINDS",
   },
   {
     number: "02",
-    title: "SOUND",
-    copy: "Chillige DJ-Sets begleiten den Abend. Kein Clubstress. Einfach guter Sound für den richtigen Vibe.",
-    meta: "DJ SETS",
+    title: "SHOP",
+    copy: "Vintage Seller, Streetwear- und Sneaker-Händler, Designer, Artists und lokale Brands mit eigener Handschrift.",
+    meta: "SELECTED SELLERS",
   },
   {
     number: "03",
-    title: "FOOD",
-    copy: "Herzhaft oder süß: wechselnde Foodstände machen aus Shopping einen ganzen Abend.",
-    meta: "SWEET × SAVOURY",
+    title: "CONNECT",
+    copy: "DJ-Sets, Kreative, Sammler und eine Community, die Fashion, Musik und Kultur zusammenbringt.",
+    meta: "MUSIC × COMMUNITY",
   },
   {
     number: "04",
-    title: "DRINKS",
-    copy: "Cold drinks, Aperitivo und Specials unserer Partner — von Softdrinks bis zum Feierabend-Drink.",
-    meta: "STAY A LITTLE LONGER",
+    title: "STAY",
+    copy: "Streetfood, Coffee, Matcha und Drinks machen aus dem Market einen Abend, bei dem man gerne länger bleibt.",
+    meta: "FOOD × COFFEE × DRINKS",
   },
 ];
 
@@ -49,6 +49,7 @@ export default function Home() {
           <div className="nav-links">
             <a href="#concept">Concept</a>
             <a href="#experience">Experience</a>
+            <a href="#selection">Selection</a>
             <a href="#partners">Partner</a>
           </div>
 
@@ -62,18 +63,17 @@ export default function Home() {
         <div className="hero-copy">
           <div className="eyebrow">
             <span className="status-dot" />
-            DÜSSELDORF · DATE TBA
+            DÜSSELDORF · NIGHT VINTAGE & LIFESTYLE MARKET
           </div>
 
           <h1>
-            NIGHT
-            <span className="outline">SHOPPING</span>
-            REIMAGINED.
+            VINTAGE.
+            <span className="outline">CULTURE.</span>
+            AFTER DARK.
           </h1>
 
           <p className="hero-lead">
-            Ein Abend zwischen Market, Musik, Food und Drinks. Komm zum Stöbern.
-            Bleib für den Vibe.
+            Der moderne, kuratierte Night Vintage & Lifestyle Market in Düsseldorf — Vintage Fashion, Streetwear, Sneakers, Design, Kunst, Musik, Food & Drinks.
           </p>
 
           <div className="hero-actions">
@@ -100,49 +100,48 @@ export default function Home() {
             </div>
           </div>
           <div className="art-label">
+            <span>DISCOVER</span>
+            <span>•</span>
             <span>SHOP</span>
             <span>•</span>
-            <span>EAT</span>
+            <span>CONNECT</span>
             <span>•</span>
-            <span>DRINK</span>
-            <span>•</span>
-            <span>VIBE</span>
+            <span>STAY</span>
           </div>
         </div>
       </section>
 
       <section className="ticker" aria-label="Event Highlights">
         <div className="ticker-track">
-          <span>NIGHT MARKET</span><b>✦</b>
-          <span>DÜSSELDORF</span><b>✦</b>
+          <span>VINTAGE FASHION</span><b>✦</b>
+          <span>STREETWEAR</span><b>✦</b>
+          <span>SNEAKERS</span><b>✦</b>
+          <span>DESIGN & ART</span><b>✦</b>
           <span>DJ SETS</span><b>✦</b>
-          <span>STREET FOOD</span><b>✦</b>
-          <span>DRINKS</span><b>✦</b>
-          <span>17 — 00 UHR</span><b>✦</b>
-          <span>NIGHT MARKET</span><b>✦</b>
-          <span>DÜSSELDORF</span><b>✦</b>
-          <span>DJ SETS</span><b>✦</b>
-          <span>STREET FOOD</span><b>✦</b>
-          <span>DRINKS</span><b>✦</b>
+          <span>STREETFOOD</span><b>✦</b>
+          <span>COFFEE & MATCHA</span><b>✦</b>
+          <span>NIGHTLIFE</span><b>✦</b>
+          <span>VINTAGE FASHION</span><b>✦</b>
+          <span>STREETWEAR</span><b>✦</b>
+          <span>SNEAKERS</span><b>✦</b>
+          <span>DESIGN & ART</span><b>✦</b>
         </div>
       </section>
 
       <section className="concept shell section" id="concept">
         <p className="section-kicker">THE CONCEPT</p>
         <div className="concept-grid">
-          <h2>NOT YOUR<br />USUAL MARKET.</h2>
+          <h2>MORE THAN<br />A MARKET.</h2>
           <div className="concept-copy">
             <p>
-              Night Light Bazaar bringt das Gefühl eines entspannten Abends mit
-              dem Entdecken eines besonderen Marktes zusammen.
+              Vintage trifft Street Culture, Musik und Nightlife. NIGHT LIGHT BAZAAR verbindet einen kuratierten Market mit der Energie eines urbanen Abends.
             </p>
             <p>
-              Weniger klassischer Flohmarkt. Mehr Atmosphäre, gute Musik,
-              ausgewählte Stände, gutes Essen und Drinks — an einem Ort, an den
-              man nicht nur zum Kaufen kommt.
+              Hochwertig, kreativ und visuell besonders: ausgewählte Produkte, gutes Licht, DJ-Sets und ein Food-&-Beverage-Angebot, das zum Konzept passt. Bewusst kein Massenmarkt.
             </p>
+            <div className="market-tags"><span>VINTAGE FASHION</span><span>STREETWEAR</span><span>SNEAKERS</span><span>DESIGN</span><span>ART</span><span>LOCAL BRANDS</span></div>
             <div className="concept-note">
-              <span>COME FOR THE FINDS.</span>
+              <span>DISCOVER. SHOP. CONNECT.</span>
               <span>STAY FOR THE NIGHT.</span>
             </div>
           </div>
@@ -154,11 +153,10 @@ export default function Home() {
           <div className="section-head">
             <div>
               <p className="section-kicker">THE EXPERIENCE</p>
-              <h2>FOUR REASONS<br />TO STAY.</h2>
+              <h2>DISCOVER.<br />SHOP. STAY.</h2>
             </div>
             <p>
-              Von 17 Uhr bis Mitternacht. Alles an einem Ort, alles Teil eines
-              Abends.
+              Ein Abend zwischen Vintage Market, Street Culture, Pop-up Event und Nightlife — von 17 Uhr bis Mitternacht.
             </p>
           </div>
 
@@ -178,18 +176,38 @@ export default function Home() {
         </div>
       </section>
 
+
+      <section className="selection shell section" id="selection">
+        <div className="selection-intro">
+          <p className="section-kicker">THE SELECTION</p>
+          <div className="selection-heading">
+            <h2>CURATED.<br />NOT CROWDED.</h2>
+            <p>Jeder Stand soll zum NIGHT LIGHT BAZAAR passen. Qualität, Stil und Persönlichkeit stehen vor Masse.</p>
+          </div>
+        </div>
+        <div className="selection-list">
+          <article><span>01</span><div><h3>VINTAGE & STREET</h3><p>Ausgewählte Vintage Seller, Streetwear- und Sneaker-Händler mit besonderen Pieces und Sammlerstücken.</p></div></article>
+          <article><span>02</span><div><h3>DESIGN & ART</h3><p>Designer, Artists und Kreative, die Produkte, Prints, Objects und eigene Ideen mitbringen.</p></div></article>
+          <article><span>03</span><div><h3>LOCAL & CONCEPT</h3><p>Lokale Brands und besondere Concept Stores, die zur urbanen Kultur des Events passen.</p></div></article>
+          <article><span>04</span><div><h3>FOOD & BEVERAGE</h3><p>Ausgewählte Streetfood-, Coffee-, Matcha- und Beverage-Konzepte statt klassischer Event-Gastro.</p></div></article>
+        </div>
+        <div className="audience-strip">
+          <span>FOR</span>
+          <strong>FASHION LOVERS</strong><strong>SNEAKERHEADS</strong><strong>CREATIVES</strong><strong>COLLECTORS</strong><strong>NIGHT OWLS</strong>
+        </div>
+      </section>
+
       <section className="manifesto section">
         <div className="manifesto-glow" />
         <div className="shell manifesto-inner">
           <p className="section-kicker">AFTER DARK</p>
           <h2>
-            SHOPPING HITS
-            <span>DIFFERENT</span>
-            AFTER DARK.
+            VINTAGE MEETS
+            <span>NIGHTLIFE</span>
+            IN DÜSSELDORF.
           </h2>
           <p>
-            Night Light Bazaar soll kein Event sein, das man abhakt. Es soll
-            der Abend sein, bei dem man länger bleibt als geplant.
+            Nicht einfach ein Markt, sondern eine eigene Lifestyle Experience: entdecken, shoppen, Leute treffen, Musik hören — und für die Nacht bleiben.
           </p>
         </div>
       </section>
@@ -201,8 +219,7 @@ export default function Home() {
             <h2>GOOD NIGHTS<br />NEED GOOD DRINKS.</h2>
           </div>
           <p>
-            Unsere Partner begleiten die Night mit Drinks und Specials.
-            Weitere Partner folgen.
+            Ausgewählte Beverage-Partner sorgen für Drinks und Specials, die zum Abend passen. Weitere Partner folgen.
           </p>
         </div>
 
@@ -257,8 +274,7 @@ export default function Home() {
           </div>
           <div className="vendor-copy">
             <p>
-              Du möchtest mit einem Stand, Food-Konzept oder als Partner dabei
-              sein? Die Bewerbungsphase für die erste Edition startet bald.
+              Du bist Vintage Seller, Streetwear- oder Sneaker-Händler, Designer, Artist, lokale Brand, Concept Store oder hast ein passendes Food-, Coffee- oder Matcha-Konzept? Die Bewerbungsphase für Edition 01 startet bald.
             </p>
             <span className="coming-soon">APPLICATIONS · COMING SOON</span>
           </div>
