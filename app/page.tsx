@@ -97,6 +97,15 @@ export default function Home() {
         </div>
       </section>
 
+
+      <nav className="mobile-quick-nav" aria-label="Schnellnavigation">
+        <a href="#concept">Concept</a>
+        <a href="#experience">Experience</a>
+        <a href="#selection">Selection</a>
+        <a href="#partners">Partner</a>
+        <a href="#event">Event</a>
+      </nav>
+
       <section className="intro-story section">
         <div className="shell intro-story-grid">
           <p className="section-kicker">THE NIGHT LIGHT BAZAAR</p>
