@@ -152,11 +152,21 @@ export default function Home() {
               <p className="mobile-label light">SUPPORTED BY</p>
               <p>Partner, die den Abend mit Drinks, Energy und Aperitivo begleiten.</p>
             </div>
-            <div className="mobile-partner-rail" aria-label="Partner">
-              <div><img src="/assets/partners/anheuser-busch.png?v=2" alt="Anheuser-Busch" /></div>
-              <div><img src="/assets/partners/red-bull.png?v=2" alt="Red Bull" /></div>
-              <div><img src="/assets/partners/fritz-kola.png?v=2" alt="fritz-kola" /></div>
-              <div><img src="/assets/partners/aperol.png?v=2" alt="Aperol" /></div>
+            <div className="mobile-partner-rail sponsor-marquee" aria-label="Partner">
+              <div className="sponsor-marquee-track">
+                <div className="mobile-partner-set">
+                  <div><img src="/assets/partners/anheuser-busch.png?v=2" alt="Anheuser-Busch" /></div>
+                  <div><img src="/assets/partners/red-bull.png?v=2" alt="Red Bull" /></div>
+                  <div><img src="/assets/partners/fritz-kola.png?v=2" alt="fritz-kola" /></div>
+                  <div><img src="/assets/partners/aperol.png?v=2" alt="Aperol" /></div>
+                </div>
+                <div className="mobile-partner-set" aria-hidden="true">
+                  <div><img src="/assets/partners/anheuser-busch.png?v=2" alt="" /></div>
+                  <div><img src="/assets/partners/red-bull.png?v=2" alt="" /></div>
+                  <div><img src="/assets/partners/fritz-kola.png?v=2" alt="" /></div>
+                  <div><img src="/assets/partners/aperol.png?v=2" alt="" /></div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -275,18 +285,20 @@ export default function Home() {
             <p>Drinks, Energy und Aperitivo von ausgewählten Partnern — passend zum NIGHT LIGHT BAZAAR.</p>
           </div>
 
-          <div className="partner-rail" aria-label="Partner des Night Light Bazaar">
-            <div className="partner-logo-card">
-              <img src="/assets/partners/anheuser-busch.png?v=2" alt="Anheuser-Busch" />
-            </div>
-            <div className="partner-logo-card">
-              <img src="/assets/partners/red-bull.png?v=2" alt="Red Bull" />
-            </div>
-            <div className="partner-logo-card">
-              <img src="/assets/partners/fritz-kola.png?v=2" alt="fritz-kola" />
-            </div>
-            <div className="partner-logo-card">
-              <img src="/assets/partners/aperol.png?v=2" alt="Aperol" />
+          <div className="partner-rail sponsor-marquee" aria-label="Partner des Night Light Bazaar">
+            <div className="sponsor-marquee-track">
+              <div className="partner-set">
+                <div className="partner-logo-card"><img src="/assets/partners/anheuser-busch.png?v=2" alt="Anheuser-Busch" /></div>
+                <div className="partner-logo-card"><img src="/assets/partners/red-bull.png?v=2" alt="Red Bull" /></div>
+                <div className="partner-logo-card"><img src="/assets/partners/fritz-kola.png?v=2" alt="fritz-kola" /></div>
+                <div className="partner-logo-card"><img src="/assets/partners/aperol.png?v=2" alt="Aperol" /></div>
+              </div>
+              <div className="partner-set" aria-hidden="true">
+                <div className="partner-logo-card"><img src="/assets/partners/anheuser-busch.png?v=2" alt="" /></div>
+                <div className="partner-logo-card"><img src="/assets/partners/red-bull.png?v=2" alt="" /></div>
+                <div className="partner-logo-card"><img src="/assets/partners/fritz-kola.png?v=2" alt="" /></div>
+                <div className="partner-logo-card"><img src="/assets/partners/aperol.png?v=2" alt="" /></div>
+              </div>
             </div>
           </div>
 
