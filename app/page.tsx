@@ -391,8 +391,8 @@ export default function Home() {
 
       <section className="editorial-marquee" aria-label="Night Light Bazaar Statement">
         <div className="editorial-marquee-track">
-          <span>SHOP</span><b>✦</b><span>DISCOVER</span><b>✦</b><span>CONNECT</span><b>✦</b><span>STAY</span><b>✦</b>
-          <span>SHOP</span><b>✦</b><span>DISCOVER</span><b>✦</b><span>CONNECT</span><b>✦</b><span>STAY</span><b>✦</b>
+          <span>SHOP</span><b>✦</b><span>DISCOVER</span><b>✦</b><span>LISTEN</span><b>✦</b><span>EAT</span><b>✦</b><span>DRINK</span><b>✦</b><span>CONNECT</span><b>✦</b>
+          <span>SHOP</span><b>✦</b><span>DISCOVER</span><b>✦</b><span>LISTEN</span><b>✦</b><span>EAT</span><b>✦</b><span>DRINK</span><b>✦</b><span>CONNECT</span><b>✦</b>
         </div>
       </section>
 
