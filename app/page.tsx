@@ -195,6 +195,24 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="mobile-curated-section" id="mobile-curated">
+          <div className="shell">
+            <p className="mobile-label">THE STANDARD</p>
+            <h2>CURATED.<br /><span>NOT CROWDED.</span></h2>
+            <p className="mobile-curated-lead">We don&apos;t want hundreds of random stalls. We want the right ones.</p>
+
+            <div className="mobile-curated-rules">
+              <article><span>01</span><div><strong>QUALITY</strong><em>OVER QUANTITY.</em></div></article>
+              <article><span>02</span><div><strong>STYLE</strong><em>OVER STANDARD.</em></div></article>
+              <article><span>03</span><div><strong>COMMUNITY</strong><em>OVER CROWD.</em></div></article>
+            </div>
+
+            <div className="mobile-curated-signoff">
+              <span>SELECTED.</span><span>AUTHENTIC.</span><span>DIFFERENT.</span>
+            </div>
+          </div>
+        </section>
+
         <section className="mobile-whos-section" id="mobile-whos-there">
           <div className="shell">
             <p className="mobile-label">WHO'S THERE?</p>
@@ -369,23 +387,43 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="selection shell section" id="selection">
-        <div className="selection-intro">
-          <p className="section-kicker">THE SELECTION</p>
-          <div className="selection-heading">
-            <h2>CURATED.<br />NOT CROWDED.</h2>
-            <p>Jeder Stand soll zum NIGHT LIGHT BAZAAR passen. Qualität, Stil und Persönlichkeit stehen vor Masse.</p>
+      <section className="selection curated-principle section" id="selection">
+        <div className="shell">
+          <div className="curated-head">
+            <div>
+              <p className="section-kicker">THE STANDARD</p>
+              <h2>CURATED.<span>NOT CROWDED.</span></h2>
+            </div>
+            <div className="curated-head-copy">
+              <p>We don&apos;t want hundreds of random stalls.</p>
+              <strong>WE WANT THE RIGHT ONES.</strong>
+              <small>Carefully selected sellers, brands, creatives, food concepts and experiences.</small>
+            </div>
           </div>
-        </div>
-        <div className="selection-list">
-          <article><span>01</span><div><h3>VINTAGE & STREET</h3><p>Ausgewählte Vintage Seller, Streetwear- und Sneaker-Händler mit besonderen Pieces und Sammlerstücken.</p></div></article>
-          <article><span>02</span><div><h3>DESIGN & ART</h3><p>Designer, Artists und Kreative, die Produkte, Prints, Objects und eigene Ideen mitbringen.</p></div></article>
-          <article><span>03</span><div><h3>LOCAL & CONCEPT</h3><p>Lokale Brands und besondere Concept Stores, die zur urbanen Kultur des Events passen.</p></div></article>
-          <article><span>04</span><div><h3>FOOD & BEVERAGE</h3><p>Ausgewählte Streetfood-, Coffee-, Matcha- und Beverage-Konzepte statt klassischer Event-Gastro.</p></div></article>
-        </div>
-        <div className="audience-strip">
-          <span>FOR</span>
-          <strong>FASHION LOVERS</strong><strong>SNEAKERHEADS</strong><strong>CREATIVES</strong><strong>COLLECTORS</strong><strong>NIGHT OWLS</strong>
+
+          <div className="curated-rules">
+            <article>
+              <span>01</span>
+              <div><strong>QUALITY</strong><em>OVER QUANTITY.</em></div>
+              <p>Weniger Stände, dafür ein Mix, der bewusst ausgewählt ist und als Ganzes funktioniert.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <div><strong>STYLE</strong><em>OVER STANDARD.</em></div>
+              <p>Keine beliebige Marktoptik. Jeder Auftritt soll Haltung, Ästhetik und eine eigene Handschrift mitbringen.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <div><strong>COMMUNITY</strong><em>OVER CROWD.</em></div>
+              <p>Nicht einfach möglichst viele Menschen — sondern die richtige Community für Fashion, Culture, Food und Nightlife.</p>
+            </article>
+          </div>
+
+          <div className="curated-signoff" aria-label="Night Light Bazaar Brand Promise">
+            <span>SELECTED.</span>
+            <span>AUTHENTIC.</span>
+            <span>DIFFERENT.</span>
+          </div>
         </div>
       </section>
 
