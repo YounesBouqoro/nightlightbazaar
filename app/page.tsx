@@ -350,7 +350,7 @@ export default function Home() {
             <h2>FAQ.</h2>
             <div className="faq-list">
               <details><summary>Brauche ich ein Ticket?</summary><p>Ticket- und Einlassinfos werden mit dem offiziellen Edition-01-Reveal veröffentlicht.</p></details>
-              <details><summary>Wo findet der Bazaar statt?</summary><p>In Düsseldorf. Die genaue Location wird zu einem späteren Zeitpunkt bekannt gegeben.</p></details>
+              <details><summary>Wo findet der Bazaar statt?</summary><p>In Düsseldorf. Die genaue Location wird mit dem offiziellen Location Reveal bekannt gegeben.</p></details>
               <details><summary>Was erwartet mich?</summary><p>Vintage, Streetwear, Sneakers, Musik, Food, Drinks und ausgewählte kreative Konzepte.</p></details>
               <details><summary>Kann ich selbst einen Stand machen?</summary><p>Ja. Bewerbungen für Seller, Kreative und Food-&-Beverage-Konzepte sind möglich. Die Plätze sind limitiert und werden kuratiert vergeben.</p></details>
               <details><summary>Können Brands als Partner teilnehmen?</summary><p>Ja. Brand Partnerships können als Pop-up, Activation, Sampling, Product Launch, Branded Area, Music- oder Community-Integration umgesetzt werden.</p></details>
