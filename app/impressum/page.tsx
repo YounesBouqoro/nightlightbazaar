@@ -2,7 +2,7 @@ export default function ImpressumPage() {
   return (
     <main className="legal-body">
       <header className="nav-wrap">
-        <nav className="nav shell">
+        <nav className="nav shell" aria-label="Hauptnavigation">
           <a className="brand" href="/" aria-label="Night Light Bazaar Startseite">
             <img src="/favicon.png" alt="" />
             <span>NIGHT LIGHT<small>BAZAAR</small></span>
@@ -27,7 +27,8 @@ export default function ImpressumPage() {
               <h2>Kontakt</h2>
               <p>
                 E-Mail: <a href="mailto:hello@nightlightbazaar.de">hello@nightlightbazaar.de</a><br />
-                Telefon: <a href="tel:+4915206955117">0152 06955117</a>
+                Telefon: <a href="tel:+4915206955117">+49 152 069 55 117</a><br />
+                Website: <a href="https://nightlightbazaar.de/">nightlightbazaar.de</a>
               </p>
             </section>
 
@@ -44,10 +45,17 @@ export default function ImpressumPage() {
         </div>
       </section>
 
-      <footer className="footer">
-        <div className="shell footer-inner">
-          <a className="brand footer-brand" href="/"><img src="/favicon.png" alt="" /><span>NIGHT LIGHT<small>BAZAAR</small></span></a>
-          <div className="footer-links"><a className="is-active" href="/impressum">Impressum</a><a href="/datenschutz">Datenschutz</a></div>
+      <footer className="footer legal-footer">
+        <div className="shell legal-footer-grid">
+          <a className="brand footer-brand" href="/" aria-label="Night Light Bazaar Startseite"><span>NIGHT LIGHT<small>BAZAAR</small></span></a>
+          <div className="legal-footer-contact">
+            <a href="mailto:hello@nightlightbazaar.de">hello@nightlightbazaar.de</a>
+            <a href="tel:+4915206955117">+49 152 069 55 117</a>
+          </div>
+          <div className="footer-legal-links">
+            <a className="is-active" href="/impressum">Impressum</a>
+            <a href="/datenschutz">Datenschutz</a>
+          </div>
           <a className="footer-back" href="/">STARTSEITE ↑</a>
         </div>
       </footer>
