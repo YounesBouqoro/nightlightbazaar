@@ -1,10 +1,14 @@
+export const metadata = {
+  title: "Impressum — Night Light Bazaar",
+  description: "Impressum und Kontaktangaben von Night Light Bazaar.",
+};
+
 export default function ImpressumPage() {
   return (
     <main className="legal-body">
       <header className="nav-wrap">
         <nav className="nav shell" aria-label="Hauptnavigation">
           <a className="brand" href="/" aria-label="Night Light Bazaar Startseite">
-            <img src="/favicon.png" alt="" />
             <span>NIGHT LIGHT<small>BAZAAR</small></span>
           </a>
           <a className="pill pill-small" href="/">ZUR STARTSEITE</a>
@@ -13,7 +17,7 @@ export default function ImpressumPage() {
 
       <section className="legal-page">
         <div className="shell legal-shell">
-          <p className="section-kicker">LEGAL</p>
+          <p className="section-kicker">LEGAL · NIGHT LIGHT BAZAAR</p>
           <h1>IMPRESSUM.</h1>
 
           <div className="legal-grid">
@@ -34,8 +38,13 @@ export default function ImpressumPage() {
 
             <section>
               <h2>Verantwortlich für den Internetauftritt</h2>
-              <p>Nourdin Bouqoro<br />Dunantstr. 43a<br />41468 Neuss</p>
+              <p>Nourdin Bouqoro<br />Dunantstr. 43a<br />41468 Neuss<br />Deutschland</p>
             </section>
+          </div>
+
+          <div className="legal-contact-card">
+            <span>NIGHT LIGHT BAZAAR · CONTACT</span>
+            <a href="mailto:hello@nightlightbazaar.de">HELLO@NIGHTLIGHTBAZAAR.DE ↗</a>
           </div>
 
           <div className="legal-note">
