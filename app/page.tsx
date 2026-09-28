@@ -46,14 +46,6 @@ const bazaarItems = [
   { number: "06", title: "MUSIC & NIGHTLIFE", copy: "DJs, sounds, lights & the atmosphere of the night.", meta: "AFTER DARK" },
 ];
 
-const partners = [
-  "ANHEUSER-BUSCH",
-  "RED BULL",
-  "FRITZ-KOLA",
-  "APEROL",
-  "MORE TO COME",
-];
-
 export default function Home() {
   return (
     <main>
@@ -72,7 +64,7 @@ export default function Home() {
             <a href="#experience">Experience</a>
             <a href="#bazaar">Bazaar</a>
             <a href="#sellers">Sellers</a>
-            <a href="#partners">Partner</a>
+            <a href="#partners">Brands</a>
           </div>
 
           <a className="pill pill-small" href="#event">
@@ -277,31 +269,35 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mobile-partners-section" id="mobile-partners">
+        <section className="mobile-brand-partnerships" id="mobile-partners">
           <div className="shell">
-            <div className="mobile-partner-head">
-              <p className="mobile-label light">SUPPORTED BY</p>
-              <p>Partner, die den Abend mit Drinks, Energy und Aperitivo begleiten.</p>
+            <p className="mobile-label">BRAND PARTNERSHIPS</p>
+            <h2>YOUR BRAND.<br /><span>OUR NIGHT.</span></h2>
+            <p className="mobile-brand-lead">NIGHT LIGHT BAZAAR ist eine physische Plattform für Brands, die Fashion, Culture, Music und eine junge urbane Community nicht nur erreichen, sondern aktiv erleben wollen.</p>
+
+            <div className="mobile-activation-grid">
+              <span>POP-UPS</span>
+              <span>BRAND ACTIVATIONS</span>
+              <span>SAMPLING</span>
+              <span>PRODUCT LAUNCHES</span>
+              <span>CONTENT CREATION</span>
+              <span>BRANDED AREAS</span>
+              <span>MUSIC INTEGRATION</span>
+              <span>COMMUNITY ACTIVATIONS</span>
             </div>
-            <div className="mobile-partner-rail sponsor-marquee" aria-label="Partner">
-              <div className="sponsor-marquee-track">
-                <div className="mobile-partner-set">
-                  <div><img src="/assets/partners/anheuser-busch.png?v=2" alt="Anheuser-Busch" /></div>
-                  <div><img src="/assets/partners/red-bull.png?v=2" alt="Red Bull" /></div>
-                  <div><img src="/assets/partners/fritz-kola.png?v=2" alt="fritz-kola" /></div>
-                  <div><img src="/assets/partners/aperol.png?v=2" alt="Aperol" /></div>
-                </div>
-                <div className="mobile-partner-set" aria-hidden="true">
-                  <div><img src="/assets/partners/anheuser-busch.png?v=2" alt="" /></div>
-                  <div><img src="/assets/partners/red-bull.png?v=2" alt="" /></div>
-                  <div><img src="/assets/partners/fritz-kola.png?v=2" alt="" /></div>
-                  <div><img src="/assets/partners/aperol.png?v=2" alt="" /></div>
-                </div>
-              </div>
-            </div>
+
+            <blockquote className="mobile-brand-statement">
+              <span>WE DON&apos;T JUST PUT LOGOS ON BANNERS.</span>
+              <strong>WE CREATE EXPERIENCES PEOPLE REMEMBER.</strong>
+            </blockquote>
+
+            <a className="mobile-brand-cta" href="mailto:hello@nightlightbazaar.de?subject=Brand%20Partnership%20%E2%80%94%20Night%20Light%20Bazaar&body=Brand%3A%0AKontaktperson%3A%0AWebsite%20%2F%20Instagram%3A%0AWelche%20Art%20der%20Aktivierung%20interessiert%20euch%3F%3A%0AZiel%20der%20Partnerschaft%3A%0AWeitere%20Infos%3A">
+              BECOME A PARTNER <span>↗</span>
+            </a>
+
+            <p className="mobile-partner-reveal-note">Confirmed partner reveals follow with the official Edition 01 announcements.</p>
           </div>
         </section>
-
 
         <section className="mobile-faq-section" id="mobile-faq">
           <div className="shell">
@@ -312,6 +308,7 @@ export default function Home() {
               <details><summary>Wo findet der Bazaar statt?</summary><p>In Düsseldorf. Die genaue Location wird zu einem späteren Zeitpunkt bekannt gegeben.</p></details>
               <details><summary>Was erwartet mich?</summary><p>Vintage, Streetwear, Sneakers, Musik, Food, Drinks und ausgewählte kreative Konzepte.</p></details>
               <details><summary>Kann ich selbst einen Stand machen?</summary><p>Ja. Bewerbungen für Seller, Kreative und Food-&-Beverage-Konzepte sind möglich. Die Plätze sind limitiert und werden kuratiert vergeben.</p></details>
+              <details><summary>Können Brands als Partner teilnehmen?</summary><p>Ja. Brand Partnerships können als Pop-up, Activation, Sampling, Product Launch, Branded Area, Music- oder Community-Integration umgesetzt werden.</p></details>
               <details><summary>Wie komme ich hin?</summary><p>ÖPNV-, Fahrrad- und weitere Anreiseinfos folgen zusammen mit der Location.</p></details>
             </div>
           </div>
@@ -534,36 +531,51 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="partners-carousel section" id="partners">
+      <section className="brand-partnerships section" id="partners">
         <div className="shell">
-          <div className="partner-carousel-head">
+          <div className="brand-partnerships-head">
             <div>
-              <p className="section-kicker light">OFFICIAL PARTNERS</p>
-              <h2>POWERING<br />THE NIGHT.</h2>
+              <p className="section-kicker">BRAND PARTNERSHIPS</p>
+              <h2>YOUR BRAND.<span>OUR NIGHT.</span></h2>
             </div>
-            <p>Drinks, Energy und Aperitivo von ausgewählten Partnern — passend zum NIGHT LIGHT BAZAAR.</p>
-          </div>
-
-          <div className="partner-rail sponsor-marquee" aria-label="Partner des Night Light Bazaar">
-            <div className="sponsor-marquee-track">
-              <div className="partner-set">
-                <div className="partner-logo-card"><img src="/assets/partners/anheuser-busch.png?v=2" alt="Anheuser-Busch" /></div>
-                <div className="partner-logo-card"><img src="/assets/partners/red-bull.png?v=2" alt="Red Bull" /></div>
-                <div className="partner-logo-card"><img src="/assets/partners/fritz-kola.png?v=2" alt="fritz-kola" /></div>
-                <div className="partner-logo-card"><img src="/assets/partners/aperol.png?v=2" alt="Aperol" /></div>
-              </div>
-              <div className="partner-set" aria-hidden="true">
-                <div className="partner-logo-card"><img src="/assets/partners/anheuser-busch.png?v=2" alt="" /></div>
-                <div className="partner-logo-card"><img src="/assets/partners/red-bull.png?v=2" alt="" /></div>
-                <div className="partner-logo-card"><img src="/assets/partners/fritz-kola.png?v=2" alt="" /></div>
-                <div className="partner-logo-card"><img src="/assets/partners/aperol.png?v=2" alt="" /></div>
-              </div>
+            <div className="brand-partnerships-intro">
+              <p>NIGHT LIGHT BAZAAR ist eine physische Plattform für Brands, die Culture, Fashion, Music und eine junge urbane Community nicht nur erreichen, sondern aktiv erleben wollen.</p>
+              <strong>MAKE YOUR BRAND PART OF THE EXPERIENCE.</strong>
             </div>
           </div>
 
-          <div className="partner-note">
-            <span>BEVERAGE PARTNERS · EDITION 01</span>
-            <span>MORE TO COME</span>
+          <div className="activation-grid" aria-label="Brand partnership formats">
+            <article><span>01</span><strong>POP-UPS</strong><small>Own your space.</small></article>
+            <article><span>02</span><strong>BRAND ACTIVATIONS</strong><small>Create interaction.</small></article>
+            <article><span>03</span><strong>SAMPLING</strong><small>Put product in hand.</small></article>
+            <article><span>04</span><strong>PRODUCT LAUNCHES</strong><small>Launch in culture.</small></article>
+            <article><span>05</span><strong>CONTENT CREATION</strong><small>Turn the night into content.</small></article>
+            <article><span>06</span><strong>BRANDED AREAS</strong><small>Build a world around your brand.</small></article>
+            <article><span>07</span><strong>MUSIC INTEGRATION</strong><small>Connect through sound.</small></article>
+            <article><span>08</span><strong>COMMUNITY ACTIVATIONS</strong><small>Meet people, not impressions.</small></article>
+          </div>
+
+          <div className="brand-manifesto">
+            <div className="brand-manifesto-index" aria-hidden="true">NLB / BRANDS / 01</div>
+            <p>WE DON&apos;T JUST PUT<br />LOGOS ON BANNERS.</p>
+            <strong>WE CREATE EXPERIENCES<br />PEOPLE REMEMBER.</strong>
+          </div>
+
+          <div className="brand-partner-cta">
+            <div>
+              <p className="section-kicker light">PARTNER WITH THE NIGHT</p>
+              <h3>BUILD SOMETHING<br />PEOPLE FEEL.</h3>
+              <p>Tell us about your brand, your goal and the kind of activation you have in mind. We&apos;ll shape the right format together around the NIGHT LIGHT BAZAAR experience.</p>
+            </div>
+            <div className="brand-partner-actions">
+              <a className="brand-partner-primary" href="mailto:hello@nightlightbazaar.de?subject=Brand%20Partnership%20%E2%80%94%20Night%20Light%20Bazaar&body=Brand%3A%0AKontaktperson%3A%0AWebsite%20%2F%20Instagram%3A%0AWelche%20Art%20der%20Aktivierung%20interessiert%20euch%3F%3A%0AZiel%20der%20Partnerschaft%3A%0AWeitere%20Infos%3A">
+                BECOME A PARTNER <span>↗</span>
+              </a>
+              <a className="brand-partner-secondary" href="mailto:hello@nightlightbazaar.de?subject=Partnership%20Deck%20Request%20%E2%80%94%20Night%20Light%20Bazaar">
+                REQUEST PARTNERSHIP INFO
+              </a>
+              <small>PARTNER ANNOUNCEMENTS · EDITION 01 · COMING WITH THE OFFICIAL REVEAL</small>
+            </div>
           </div>
         </div>
       </section>
