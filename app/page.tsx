@@ -71,6 +71,7 @@ export default function Home() {
             <a href="#concept">Concept</a>
             <a href="#experience">Experience</a>
             <a href="#bazaar">Bazaar</a>
+            <a href="#sellers">Sellers</a>
             <a href="#partners">Partner</a>
           </div>
 
@@ -110,8 +111,8 @@ export default function Home() {
               <a className="hero-cta hero-cta-primary" href="https://www.instagram.com/nightlightbazaar/" target="_blank" rel="noreferrer">
                 FOLLOW THE NIGHT <span>↗</span>
               </a>
-              <a className="hero-cta hero-cta-secondary" href="mailto:hello@nightlightbazaar.de?subject=Seller%20Application%20%E2%80%94%20Night%20Light%20Bazaar">
-                SELL WITH US <span>↗</span>
+              <a className="hero-cta hero-cta-secondary" href="#sellers">
+                SELL WITH US <span>↓</span>
               </a>
             </div>
           </div>
@@ -144,6 +145,7 @@ export default function Home() {
       <nav className="mobile-quick-nav" aria-label="Schnellnavigation">
         <a href="#mobile-experience">Highlights</a>
         <a href="#mobile-bazaar">Bazaar</a>
+        <a href="#mobile-sellers">Sell</a>
         <a href="#mobile-event">Event</a>
         <a href="#mobile-faq">FAQ</a>
       </nav>
@@ -209,6 +211,28 @@ export default function Home() {
 
             <div className="mobile-curated-signoff">
               <span>SELECTED.</span><span>AUTHENTIC.</span><span>DIFFERENT.</span>
+            </div>
+          </div>
+        </section>
+
+        <section className="mobile-seller-call" id="mobile-sellers">
+          <div className="shell">
+            <p className="mobile-label">CALL FOR EXHIBITORS &amp; CREATIVES</p>
+            <h2>BRING YOUR PIECES<br /><span>TO THE NIGHT.</span></h2>
+            <p className="mobile-seller-lead">Du machst etwas Besonderes? Zeig es einer Community, die es versteht. Die Standplätze für Edition 01 sind limitiert und werden kuratiert vergeben.</p>
+
+            <div className="mobile-seller-types">
+              <article><span>01</span><div><strong>FASHION &amp; VINTAGE</strong><p>Archive, High-End Secondhand, Y2K, Streetwear, Upcycling &amp; Independent Labels.</p></div></article>
+              <article><span>02</span><div><strong>DESIGNER &amp; KREATIVE</strong><p>Produktdesign, Homeware, Prints, Illustration, Photography, Schmuck &amp; Handgemachtes.</p></div></article>
+              <article><span>03</span><div><strong>ARTISTS &amp; MAKERS</strong><p>Artists, Customizer, Live-Art und interaktive Craft-Formate.</p></div></article>
+              <article><span>04</span><div><strong>FOOD &amp; BEVERAGE</strong><p>Streetfood, Specialty Coffee, Matcha, Drinks &amp; Fine Snacks.</p></div></article>
+            </div>
+
+            <div className="mobile-seller-cta">
+              <a href="mailto:hello@nightlightbazaar.de?subject=Bewerbung%20als%20Aussteller%20%E2%80%94%20Night%20Light%20Bazaar&body=Name%20%2F%20Brand%3A%0AKategorie%3A%0AInstagram%20%2F%20Website%3A%0AWas%20bietest%20du%20an%3F%3A%0AStandort%3A%0AWeitere%20Infos%3A">
+                APPLY AS A SELLER <span>↗</span>
+              </a>
+              <a href="https://www.instagram.com/nightlightbazaar/" target="_blank" rel="noreferrer">OR DM @NIGHTLIGHTBAZAAR</a>
             </div>
           </div>
         </section>
@@ -293,14 +317,6 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mobile-vendor-section">
-          <div className="shell">
-            <p className="mobile-label">BE PART OF THE NIGHT</p>
-            <h2>JOIN THE BAZAAR.</h2>
-            <p>Du möchtest als Seller, Food-Konzept oder Partner dabei sein?</p>
-            <span className="mobile-coming-soon">APPLICATIONS · COMING SOON</span>
-          </div>
-        </section>
       </section>
 
       <section className="intro-story editorial-intro section" id="concept">
@@ -423,6 +439,75 @@ export default function Home() {
             <span>SELECTED.</span>
             <span>AUTHENTIC.</span>
             <span>DIFFERENT.</span>
+          </div>
+        </div>
+      </section>
+
+      <section className="seller-call section" id="sellers">
+        <div className="shell">
+          <div className="seller-call-head">
+            <div>
+              <p className="section-kicker">CALL FOR EXHIBITORS &amp; CREATIVES</p>
+              <h2>BRING YOUR PIECES<span>TO THE NIGHT.</span></h2>
+            </div>
+            <div className="seller-call-intro">
+              <p>Du machst etwas Besonderes? Zeig es einer Community, die es versteht.</p>
+              <strong>SELECTED SELLERS ONLY.</strong>
+              <small>Die Standplätze für den kommenden NIGHT LIGHT BAZAAR sind limitiert und werden kuratiert vergeben.</small>
+            </div>
+          </div>
+
+          <div className="seller-types">
+            <article>
+              <span>01</span>
+              <div className="seller-type-title"><small>WHO WE&apos;RE LOOKING FOR</small><h3>FASHION &amp;<br />VINTAGE SELLER</h3></div>
+              <p>Vintage-Archive, High-End Secondhand, Y2K &amp; Streetwear, Upcycling, exklusive Drops &amp; Independent Labels.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <div className="seller-type-title"><small>WHO WE&apos;RE LOOKING FOR</small><h3>DESIGNER &amp;<br />KREATIVE</h3></div>
+              <p>Produktdesign, Homeware, Prints, Illustrationen, Photography, Schmuck, Keramik &amp; Handgemachtes.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <div className="seller-type-title"><small>WHO WE&apos;RE LOOKING FOR</small><h3>ARTISTS &amp;<br />MAKERS</h3></div>
+              <p>Künstler, Customizer für Sneaker, Denim oder Print, Live-Art und interaktive Craft-Formate.</p>
+            </article>
+            <article>
+              <span>04</span>
+              <div className="seller-type-title"><small>WHO WE&apos;RE LOOKING FOR</small><h3>SPECIALTY FOOD<br />&amp; BEVERAGE</h3></div>
+              <p>Kuratierte Streetfood-Konzepte, Specialty Coffee, Matcha, Drinks &amp; Fine Snacks.</p>
+            </article>
+          </div>
+
+          <div className="seller-benefits">
+            <div className="seller-benefits-head">
+              <p className="section-kicker">WHY JOIN THE NIGHT?</p>
+              <h3>YOUR WORK.<br />THE RIGHT CROWD.</h3>
+            </div>
+            <div className="seller-benefit-grid">
+              <article><span>01</span><strong>THE RIGHT AUDIENCE</strong><p>Eine urbane, trendbewusste Zielgruppe, die Qualität, Besonderheit und Ästhetik schätzt.</p></article>
+              <article><span>02</span><strong>PROFESSIONAL FRAME</strong><p>Ein klares, stilvolles Gesamtkonzept statt Durcheinander und klassischer Marktoptik.</p></article>
+              <article><span>03</span><strong>DAY-TO-NIGHT ENERGY</strong><p>Licht-Inszenierung, DJs und Bar-Kultur verwandeln den Markt mit zunehmender Dunkelheit in ein urbanes Erlebnis.</p></article>
+              <article><span>04</span><strong>REACH &amp; CONTENT</strong><p>Social-Media-Marketing, Creator-Einbindungen und professionelle Event-Fotografie und -Videografie.</p></article>
+            </div>
+          </div>
+
+          <div className="seller-apply">
+            <div>
+              <p className="section-kicker light">EDITION 01 · APPLICATION</p>
+              <h3>READY TO<br />JOIN THE NIGHT?</h3>
+              <p>Schick uns deine Brand, dein Konzept und einen Link zu Instagram oder deiner Website. Wir kuratieren den Mix für Edition 01.</p>
+            </div>
+            <div className="seller-apply-actions">
+              <a className="seller-apply-primary" href="mailto:hello@nightlightbazaar.de?subject=Bewerbung%20als%20Aussteller%20%E2%80%94%20Night%20Light%20Bazaar&body=Name%20%2F%20Brand%3A%0AKategorie%3A%0AInstagram%20%2F%20Website%3A%0AWas%20bietest%20du%20an%3F%3A%0AStandort%3A%0AWeitere%20Infos%3A">
+                APPLY AS A SELLER <span>↗</span>
+              </a>
+              <a className="seller-apply-secondary" href="https://www.instagram.com/nightlightbazaar/" target="_blank" rel="noreferrer">
+                INSTAGRAM DM · @NIGHTLIGHTBAZAAR
+              </a>
+              <small>LIMITED SPOTS · CURATED SELECTION</small>
+            </div>
           </div>
         </div>
       </section>
@@ -555,20 +640,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="vendor shell section">
-        <div className="vendor-card">
-          <div>
-            <p className="section-kicker">BE PART OF THE NIGHT</p>
-            <h2>SELL.<br />SERVE.<br />COLLAB.</h2>
-          </div>
-          <div className="vendor-copy">
-            <p>
-              Du bist Vintage Seller, Streetwear- oder Sneaker-Händler, Designer, Artist, lokale Brand, Concept Store oder hast ein passendes Food-, Coffee- oder Matcha-Konzept? Die Bewerbungsphase für Edition 01 startet bald.
-            </p>
-            <span className="coming-soon">APPLICATIONS · COMING SOON</span>
-          </div>
-        </div>
-      </section>
 
 
       <footer className="footer">
