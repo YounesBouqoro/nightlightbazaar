@@ -146,7 +146,7 @@ export default function Home() {
 
 
       <section className="mobile-landing" aria-label="Night Light Bazaar Mobile">
-        <section className="mobile-intro-card" id="mobile-about">
+        <section className="mobile-intro-card" id="mobile-about" data-chapter="01">
           <div className="shell">
             <p className="mobile-label">THE NIGHT LIGHT BAZAAR</p>
             <h2>NOT JUST A MARKET.<br /><span>IT&apos;S A NIGHT OUT.</span></h2>
@@ -157,7 +157,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mobile-experience-section" id="mobile-experience">
+        <section className="mobile-experience-section" id="mobile-experience" data-chapter="02">
           <div className="shell">
             <p className="mobile-label">THE BAZAAR EXPERIENCE</p>
             <h2>ONE NIGHT.<br />MANY MOMENTS.</h2>
@@ -172,7 +172,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mobile-bazaar-section" id="mobile-bazaar">
+        <section className="mobile-bazaar-section" id="mobile-bazaar" data-chapter="03">
           <div className="shell">
             <p className="mobile-label">WHAT&apos;S AT THE BAZAAR</p>
             <h2>SIX WORLDS.<br />ONE NIGHT.</h2>
@@ -191,7 +191,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mobile-curated-section" id="mobile-curated">
+        <section className="mobile-curated-section" id="mobile-curated" data-chapter="04">
           <div className="shell">
             <p className="mobile-label">THE STANDARD</p>
             <h2>CURATED.<br /><span>NOT CROWDED.</span></h2>
@@ -209,7 +209,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mobile-seller-call" id="mobile-sellers">
+        <section className="mobile-seller-call" id="mobile-sellers" data-chapter="05">
           <div className="shell">
             <p className="mobile-label">CALL FOR EXHIBITORS &amp; CREATIVES</p>
             <h2>BRING YOUR PIECES<br /><span>TO THE NIGHT.</span></h2>
@@ -231,7 +231,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mobile-whos-section" id="mobile-whos-there">
+        <section className="mobile-whos-section" id="mobile-whos-there" data-chapter="06">
           <div className="shell">
             <p className="mobile-label">WHO'S THERE?</p>
             <h2>CURATED PEOPLE.<br />CURATED CONCEPTS.</h2>
@@ -244,7 +244,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mobile-sound-section" id="mobile-music">
+        <section className="mobile-sound-section" id="mobile-music" data-chapter="07">
           <div className="shell">
             <p className="mobile-label">SOUND OF THE NIGHT</p>
             <h2>MUSIC IS PART<br /><span>OF THE EXPERIENCE.</span></h2>
@@ -265,7 +265,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mobile-food-section" id="mobile-food">
+        <section className="mobile-food-section" id="mobile-food" data-chapter="08">
           <div className="shell">
             <p className="mobile-label">EAT · DRINK · STAY</p>
             <h2>COME FOR VINTAGE.<br /><span>STAY FOR MORE.</span></h2>
@@ -288,7 +288,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mobile-edition-reveal" id="mobile-event">
+        <section className="mobile-edition-reveal" id="mobile-event" data-chapter="09">
           <div className="shell">
             <p className="mobile-label">NIGHT LIGHT BAZAAR · EDITION 01</p>
             <div className="mobile-edition-status">EDITION 01 — COMING SOON</div>
@@ -314,7 +314,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mobile-brand-partnerships" id="mobile-partners">
+        <section className="mobile-brand-partnerships" id="mobile-partners" data-chapter="10">
           <div className="shell">
             <p className="mobile-label">BRAND PARTNERSHIPS</p>
             <h2>YOUR BRAND.<br /><span>OUR NIGHT.</span></h2>
@@ -344,7 +344,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mobile-faq-section" id="mobile-faq">
+        <section className="mobile-faq-section" id="mobile-faq" data-chapter="11">
           <div className="shell">
             <p className="mobile-label">GOOD TO KNOW</p>
             <h2>FAQ.</h2>
@@ -360,6 +360,15 @@ export default function Home() {
         </section>
 
       </section>
+
+      <nav className="mobile-bottom-dock" aria-label="Night Light Bazaar Schnellaktionen">
+        <a className="mobile-dock-follow" href="https://www.instagram.com/nightlightbazaar/" target="_blank" rel="noreferrer">
+          <span>FOLLOW</span><strong>THE NIGHT ↗</strong>
+        </a>
+        <a className="mobile-dock-sell" href="#mobile-sellers">
+          <span>SELL</span><strong>WITH US ↑</strong>
+        </a>
+      </nav>
 
       <section className="intro-story editorial-intro section" id="concept">
         <div className="shell editorial-intro-grid">
