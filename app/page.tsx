@@ -288,30 +288,29 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mobile-event-section" id="mobile-event">
+        <section className="mobile-edition-reveal" id="mobile-event">
           <div className="shell">
-            <div className="mobile-event-card">
-              <p className="mobile-label light">EVENT INFO · EDITION 01</p>
-              <h2>MEET US<br />AFTER DARK.</h2>
-              <div className="mobile-event-facts">
-                <div><small>WHEN</small><strong>DATE TBA</strong></div>
-                <div><small>TIME</small><strong>17:00 — 00:00</strong></div>
-                <div><small>WHERE</small><strong>DÜSSELDORF</strong><span>Location wird bekannt gegeben.</span></div>
-              </div>
-              <p className="mobile-event-note">Updates zu Datum, Location und Tickets folgen.</p>
-            </div>
-          </div>
-        </section>
+            <p className="mobile-label">NIGHT LIGHT BAZAAR · EDITION 01</p>
+            <div className="mobile-edition-status">EDITION 01 — COMING SOON</div>
+            <h2>ONE NIGHT.<br /><span>ONE SPECIAL PLACE.</span></h2>
+            <p className="mobile-edition-lead">Düsseldorf ist gesetzt. Datum, genaue Location, Zeit und Ticketinfos werden mit dem offiziellen Reveal veröffentlicht.</p>
 
-
-        <section className="mobile-arrival-section">
-          <div className="shell mobile-arrival-card">
-            <div>
-              <p className="mobile-label">GETTING THERE</p>
-              <h2>DÜSSELDORF.</h2>
+            <div className="mobile-reveal-grid" aria-label="Edition 01 reveal status">
+              <article><small>CITY</small><strong>DÜSSELDORF</strong><span>CONFIRMED</span></article>
+              <article><small>DATE</small><strong>COMING SOON</strong><span>REVEAL PENDING</span></article>
+              <article><small>LOCATION</small><strong>UNDER WRAPS</strong><span>FOLLOW THE CLUES</span></article>
+              <article><small>TICKETS</small><strong>COMING SOON</strong><span>AFTER THE REVEAL</span></article>
             </div>
-            <p>Die genaue Location ist noch geheim. ÖPNV-, Fahrrad- und Anreiseinfos folgen direkt mit dem Location Reveal.</p>
-            <span>LOCATION · TBA</span>
+
+            <div className="mobile-clue-visual" aria-hidden="true">
+              <span>NLB / DUS / 01</span>
+              <i></i><i></i><i></i>
+              <strong>?</strong>
+            </div>
+
+            <a className="mobile-clue-cta" href="https://www.instagram.com/nightlightbazaar/" target="_blank" rel="noreferrer">
+              FOLLOW THE CLUES <span>↗</span>
+            </a>
           </div>
         </section>
 
@@ -350,12 +349,12 @@ export default function Home() {
             <p className="mobile-label">GOOD TO KNOW</p>
             <h2>FAQ.</h2>
             <div className="faq-list">
-              <details><summary>Brauche ich ein Ticket?</summary><p>Ticket- und Einlassinfos werden mit dem offiziellen Event-Launch veröffentlicht.</p></details>
+              <details><summary>Brauche ich ein Ticket?</summary><p>Ticket- und Einlassinfos werden mit dem offiziellen Edition-01-Reveal veröffentlicht.</p></details>
               <details><summary>Wo findet der Bazaar statt?</summary><p>In Düsseldorf. Die genaue Location wird zu einem späteren Zeitpunkt bekannt gegeben.</p></details>
               <details><summary>Was erwartet mich?</summary><p>Vintage, Streetwear, Sneakers, Musik, Food, Drinks und ausgewählte kreative Konzepte.</p></details>
               <details><summary>Kann ich selbst einen Stand machen?</summary><p>Ja. Bewerbungen für Seller, Kreative und Food-&-Beverage-Konzepte sind möglich. Die Plätze sind limitiert und werden kuratiert vergeben.</p></details>
               <details><summary>Können Brands als Partner teilnehmen?</summary><p>Ja. Brand Partnerships können als Pop-up, Activation, Sampling, Product Launch, Branded Area, Music- oder Community-Integration umgesetzt werden.</p></details>
-              <details><summary>Wie komme ich hin?</summary><p>ÖPNV-, Fahrrad- und weitere Anreiseinfos folgen zusammen mit der Location.</p></details>
+              <details><summary>Wie komme ich hin?</summary><p>Anreiseinfos folgen direkt mit dem offiziellen Location Reveal.</p></details>
             </div>
           </div>
         </section>
@@ -680,47 +679,78 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="event-snapshot" aria-label="Event auf einen Blick">
-        <div className="shell event-snapshot-grid">
-          <div><small>WHERE</small><strong>DÜSSELDORF</strong></div>
-          <div><small>WHEN</small><strong>DATE TBA</strong></div>
-          <div><small>TIME</small><strong>17:00 — 00:00</strong></div>
-          <div><small>FORMAT</small><strong>NIGHT MARKET</strong></div>
-        </div>
-      </section>
-
-      <section className="event shell section" id="event">
-        <div className="event-card">
-          <div className="event-copy">
-            <p className="section-kicker light">NIGHT LIGHT BAZAAR · EDITION 01</p>
-            <h2>MEET US<br />AFTER DARK.</h2>
+      <section className="edition-reveal section" id="event">
+        <div className="shell">
+          <div className="edition-reveal-head">
+            <div>
+              <p className="section-kicker">NIGHT LIGHT BAZAAR · EDITION 01</p>
+              <div className="edition-reveal-badge">EDITION 01 — COMING SOON</div>
+              <h2>ONE NIGHT.<span>ONE SPECIAL PLACE.</span></h2>
+            </div>
+            <div className="edition-reveal-intro">
+              <p>Düsseldorf ist gesetzt. Alles Weitere bleibt bis zum offiziellen Reveal unter Verschluss.</p>
+              <strong>FOLLOW THE CLUES.</strong>
+              <small>Datum, genaue Location, Zeit und Ticketinformationen werden Schritt für Schritt veröffentlicht.</small>
+            </div>
           </div>
 
-          <div className="event-facts">
-            <div>
-              <small>WHEN</small>
-              <strong>DATE TBA</strong>
-            </div>
-            <div>
-              <small>TIME</small>
-              <strong>17:00 — 00:00</strong>
-            </div>
-            <div>
-              <small>WHERE</small>
+          <div className="reveal-board" aria-label="Edition 01 reveal status">
+            <article>
+              <span>01</span>
+              <small>CITY</small>
               <strong>DÜSSELDORF</strong>
-              <span>Location wird bekannt gegeben.</span>
+              <em>CONFIRMED</em>
+            </article>
+            <article>
+              <span>02</span>
+              <small>DATE</small>
+              <strong>COMING SOON</strong>
+              <em>REVEAL PENDING</em>
+            </article>
+            <article>
+              <span>03</span>
+              <small>LOCATION</small>
+              <strong>UNDER WRAPS</strong>
+              <em>FOLLOW THE CLUES</em>
+            </article>
+            <article>
+              <span>04</span>
+              <small>TICKETS</small>
+              <strong>COMING SOON</strong>
+              <em>AFTER THE REVEAL</em>
+            </article>
+          </div>
+
+          <div className="location-mystery">
+            <div className="location-mystery-meta">
+              <span>NLB / DUS / EDITION 01</span>
+              <span>LOCATION FILE · LOCKED</span>
+            </div>
+
+            <div className="location-mystery-visual" aria-hidden="true">
+              <div className="mystery-ring mystery-ring-a" />
+              <div className="mystery-ring mystery-ring-b" />
+              <div className="mystery-grid-lines" />
+              <strong>?</strong>
+            </div>
+
+            <div className="location-mystery-copy">
+              <p>ONE NIGHT.<br />ONE SPECIAL PLACE.</p>
+              <span>Die genaue Location wird mit einer eigenen Announcement bekannt gegeben.</span>
             </div>
           </div>
 
-          <div className="event-footer">
-            <p>
-              Updates zu Datum, Location, DJs, Ständen und Tickets folgen.
-            </p>
-            <div className="event-tag">SECRET LOCATION · REVEALED SOON</div>
+          <div className="reveal-actions">
+            <a className="reveal-primary" href="https://www.instagram.com/nightlightbazaar/" target="_blank" rel="noreferrer">
+              FOLLOW THE CLUES <span>↗</span>
+            </a>
+            <div className="reveal-note">
+              <span>LOCATION REVEAL</span>
+              <strong>COMING SOON</strong>
+            </div>
           </div>
         </div>
       </section>
-
 
       <section className="desktop-enrichment shell section">
         <div className="desktop-whos">
@@ -735,16 +765,11 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="arrival-card">
-          <div><p className="section-kicker light">GETTING THERE</p><h3>DÜSSELDORF · LOCATION TBA</h3></div>
-          <p>ÖPNV-, Fahrrad- und Anreiseinfos folgen direkt mit dem Location Reveal.</p>
-        </div>
-
         <div className="desktop-faq" id="faq">
           <div><p className="section-kicker">GOOD TO KNOW</p><h3>FAQ.</h3></div>
           <div className="faq-list">
-            <details><summary>Brauche ich ein Ticket?</summary><p>Ticket- und Einlassinfos werden mit dem offiziellen Event-Launch veröffentlicht.</p></details>
-            <details><summary>Wo findet der Bazaar statt?</summary><p>In Düsseldorf. Die genaue Location wird später bekannt gegeben.</p></details>
+            <details><summary>Brauche ich ein Ticket?</summary><p>Ticket- und Einlassinfos werden mit dem offiziellen Edition-01-Reveal veröffentlicht.</p></details>
+            <details><summary>Wo findet der Bazaar statt?</summary><p>In Düsseldorf. Die genaue Location wird im offiziellen Location Reveal bekannt gegeben.</p></details>
             <details><summary>Was erwartet mich?</summary><p>Vintage, Streetwear, Sneakers, Musik, Food, Drinks und ausgewählte kreative Konzepte.</p></details>
             <details><summary>Kann ich selbst einen Stand machen?</summary><p>Ja. Bewerbungen für Seller, Kreative und Food-&-Beverage-Konzepte sind möglich. Die Plätze sind limitiert und werden kuratiert vergeben.</p></details>
             <details><summary>Wie komme ich hin?</summary><p>Anreiseinfos folgen zusammen mit dem Location Reveal.</p></details>
