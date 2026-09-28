@@ -136,11 +136,11 @@ export default function Home() {
 
 
       <nav className="mobile-quick-nav" aria-label="Schnellnavigation">
-        <a href="#mobile-experience">Highlights</a>
+        <a href="#mobile-experience">Experience</a>
         <a href="#mobile-bazaar">Bazaar</a>
         <a href="#mobile-sellers">Sell</a>
         <a href="#mobile-music">Sound</a>
-        <a href="#mobile-event">Event</a>
+        <a href="#mobile-event">Reveal</a>
         <a href="#mobile-faq">FAQ</a>
       </nav>
 
