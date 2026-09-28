@@ -62,14 +62,16 @@ export default function Home() {
           <div className="nav-links">
             <a href="#concept">Concept</a>
             <a href="#experience">Experience</a>
-            <a href="#bazaar">Bazaar</a>
             <a href="#sellers">Sellers</a>
-            <a href="#music">Sound & Food</a>
-            <a href="#partners">Brands</a>
+            <a href="#event">Event</a>
+            <a href="#faq">FAQ</a>
           </div>
 
-          <a className="pill pill-small" href="#event">
-            EVENT INFO
+          <a className="pill pill-small desktop-header-cta" href="#sellers">
+            SELL WITH US
+          </a>
+          <a className="pill pill-small mobile-header-cta" href="#mobile-sellers">
+            SELL WITH US
           </a>
         </nav>
       </header>
@@ -136,10 +138,9 @@ export default function Home() {
 
 
       <nav className="mobile-quick-nav" aria-label="Schnellnavigation">
+        <a href="#mobile-about">About</a>
         <a href="#mobile-experience">Experience</a>
-        <a href="#mobile-bazaar">Bazaar</a>
-        <a href="#mobile-sellers">Sell</a>
-        <a href="#mobile-music">Sound</a>
+        <a href="#mobile-sellers">Sellers</a>
         <a href="#mobile-event">Reveal</a>
         <a href="#mobile-faq">FAQ</a>
       </nav>
