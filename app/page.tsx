@@ -350,13 +350,14 @@ export default function Home() {
             <p className="mobile-label">GOOD TO KNOW</p>
             <h2>FAQ.</h2>
             <div className="faq-list">
-              <details><summary>Brauche ich ein Ticket?</summary><p>Ticket- und Einlassinfos werden mit dem offiziellen Edition-01-Reveal veröffentlicht.</p></details>
-              <details><summary>Wo findet der Bazaar statt?</summary><p>In Düsseldorf. Die genaue Location wird mit dem offiziellen Location Reveal bekannt gegeben.</p></details>
-              <details><summary>Ist NIGHT LIGHT BAZAAR ein klassischer Flohmarkt?</summary><p>Nein. NIGHT LIGHT BAZAAR ist ein kuratierter Night Vintage &amp; Lifestyle Market mit ausgewählten Sellern, Kreativen, Musik, Food und Drinks.</p></details>
-              <details><summary>Kann ich selbst einen Stand machen?</summary><p>Ja. Bewerbungen für Seller, Kreative und Food-&amp;-Beverage-Konzepte sind möglich. Die Plätze sind limitiert und werden kuratiert vergeben.</p></details>
-              <details><summary>Können Brands als Partner teilnehmen?</summary><p>Ja. Brand Partnerships können als Pop-up, Activation, Sampling, Product Launch, Branded Area, Music- oder Community-Integration umgesetzt werden.</p></details>
-              <details><summary>Wann werden DJs und weitere Namen bekannt gegeben?</summary><p>Line-up, Seller-Reveals und weitere Edition-01-Updates werden schrittweise über unsere Kanäle veröffentlicht.</p></details>
-              <details><summary>Wie bleibe ich auf dem Laufenden?</summary><p>Folge @nightlightbazaar auf Instagram. Dort erscheinen Location-Clues, Seller-Reveals, Line-up-Updates und weitere Ankündigungen.</p></details>
+              <details><summary>Wann findet der Bazaar statt?</summary><p>Edition 01 wird bald angekündigt. Datum, Zeit und Ticketinformationen folgen mit dem offiziellen Reveal.</p></details>
+              <details><summary>Wo findet der Bazaar statt?</summary><p>In Düsseldorf. Die genaue Location wird mit dem offiziellen Event- und Location-Reveal bekannt gegeben.</p></details>
+              <details><summary>Kann ich beim Bazaar verkaufen?</summary><p>Ja. Gesucht werden ausgewählte Vintage- und Streetwear-Seller, Sneaker-Collector, Artists, Designer und Kreative. Die Plätze sind limitiert und werden kuratiert vergeben.</p></details>
+              <details><summary>Können Brands teilnehmen?</summary><p>Ja. Für Brands sind unter anderem Pop-ups, Activations, Sampling, Product Launches, Branded Areas sowie Music- und Community-Integrationen möglich.</p></details>
+              <details><summary>Gibt es Food &amp; Drinks?</summary><p>Ja. Ausgewählte Food- und Beverage-Konzepte sind Teil des Bazaar.</p></details>
+              <details><summary>Gibt es Musik?</summary><p>Ja. DJs und Music sind ein fester Bestandteil der NIGHT LIGHT BAZAAR Experience.</p></details>
+              <details><summary>Ist NIGHT LIGHT BAZAAR ein klassischer Flohmarkt?</summary><p>Nicht genau. NIGHT LIGHT BAZAAR verbindet Vintage Market, Street Culture, Lifestyle, Food, Music und Nightlife in einem kuratierten Format.</p></details>
+              <details><summary>Wie bleibe ich auf dem Laufenden?</summary><p>Folge @nightlightbazaar auf Instagram. Dort erscheinen Location-Clues, Seller-Reveals, Brand-Ankündigungen, DJ-Line-ups und weitere Edition-01-Updates.</p></details>
             </div>
           </div>
         </section>
@@ -779,13 +780,14 @@ export default function Home() {
         <div className="desktop-faq" id="faq">
           <div><p className="section-kicker">GOOD TO KNOW</p><h3>FAQ.</h3></div>
           <div className="faq-list">
-            <details><summary>Brauche ich ein Ticket?</summary><p>Ticket- und Einlassinfos werden mit dem offiziellen Edition-01-Reveal veröffentlicht.</p></details>
-            <details><summary>Wo findet der Bazaar statt?</summary><p>In Düsseldorf. Die genaue Location wird mit dem offiziellen Location Reveal bekannt gegeben.</p></details>
-            <details><summary>Ist NIGHT LIGHT BAZAAR ein klassischer Flohmarkt?</summary><p>Nein. NIGHT LIGHT BAZAAR ist ein kuratierter Night Vintage &amp; Lifestyle Market mit ausgewählten Sellern, Kreativen, Musik, Food und Drinks.</p></details>
-            <details><summary>Kann ich selbst einen Stand machen?</summary><p>Ja. Bewerbungen für Seller, Kreative und Food-&amp;-Beverage-Konzepte sind möglich. Die Plätze sind limitiert und werden kuratiert vergeben.</p></details>
-            <details><summary>Können Brands als Partner teilnehmen?</summary><p>Ja. Brand Partnerships können als Pop-up, Activation, Sampling, Product Launch, Branded Area, Music- oder Community-Integration umgesetzt werden.</p></details>
-            <details><summary>Wann werden DJs und weitere Namen bekannt gegeben?</summary><p>Line-up, Seller-Reveals und weitere Edition-01-Updates werden schrittweise über unsere Kanäle veröffentlicht.</p></details>
-            <details><summary>Wie bleibe ich auf dem Laufenden?</summary><p>Folge @nightlightbazaar auf Instagram. Dort erscheinen Location-Clues, Seller-Reveals, Line-up-Updates und weitere Ankündigungen.</p></details>
+            <details><summary>Wann findet der Bazaar statt?</summary><p>Edition 01 wird bald angekündigt. Datum, Zeit und Ticketinformationen folgen mit dem offiziellen Reveal.</p></details>
+            <details><summary>Wo findet der Bazaar statt?</summary><p>In Düsseldorf. Die genaue Location wird mit dem offiziellen Event- und Location-Reveal bekannt gegeben.</p></details>
+            <details><summary>Kann ich beim Bazaar verkaufen?</summary><p>Ja. Gesucht werden ausgewählte Vintage- und Streetwear-Seller, Sneaker-Collector, Artists, Designer und Kreative. Die Plätze sind limitiert und werden kuratiert vergeben.</p></details>
+            <details><summary>Können Brands teilnehmen?</summary><p>Ja. Für Brands sind unter anderem Pop-ups, Activations, Sampling, Product Launches, Branded Areas sowie Music- und Community-Integrationen möglich.</p></details>
+            <details><summary>Gibt es Food &amp; Drinks?</summary><p>Ja. Ausgewählte Food- und Beverage-Konzepte sind Teil des Bazaar.</p></details>
+            <details><summary>Gibt es Musik?</summary><p>Ja. DJs und Music sind ein fester Bestandteil der NIGHT LIGHT BAZAAR Experience.</p></details>
+            <details><summary>Ist NIGHT LIGHT BAZAAR ein klassischer Flohmarkt?</summary><p>Nicht genau. NIGHT LIGHT BAZAAR verbindet Vintage Market, Street Culture, Lifestyle, Food, Music und Nightlife in einem kuratierten Format.</p></details>
+            <details><summary>Wie bleibe ich auf dem Laufenden?</summary><p>Folge @nightlightbazaar auf Instagram. Dort erscheinen Location-Clues, Seller-Reveals, Brand-Ankündigungen, DJ-Line-ups und weitere Edition-01-Updates.</p></details>
           </div>
         </div>
       </section>
@@ -798,39 +800,43 @@ export default function Home() {
             <a className="brand footer-brand" href="#top" aria-label="Night Light Bazaar Startseite">
               <span>NIGHT LIGHT<small>BAZAAR</small></span>
             </a>
+            <h2>FOLLOW<br />THE NIGHT.</h2>
             <p>Düsseldorf&apos;s curated Night Vintage &amp; Lifestyle Market. Edition 01 coming soon.</p>
-            <span className="footer-edition">DÜSSELDORF · EDITION 01</span>
+            <a className="footer-mail" href="mailto:hello@nightlightbazaar.de">hello@nightlightbazaar.de ↗</a>
           </div>
 
           <nav className="footer-column" aria-label="Footer Navigation">
             <strong>EXPLORE</strong>
             <a href="#concept">Concept</a>
             <a href="#experience">Experience</a>
+            <a href="#sellers">Sellers</a>
             <a href="#event">Edition 01</a>
             <a href="#faq">FAQ</a>
           </nav>
 
           <div className="footer-column">
-            <strong>JOIN THE NIGHT</strong>
+            <strong>JOIN</strong>
             <a href="#sellers">Become a Seller</a>
-            <a href="#partners">Brand Partnerships</a>
-            <a href="https://www.instagram.com/nightlightbazaar/" target="_blank" rel="noreferrer">Instagram ↗</a>
+            <a href="#partners">Become a Partner</a>
+            <a href="mailto:hello@nightlightbazaar.de">Contact</a>
           </div>
 
-          <div className="footer-column footer-contact">
-            <strong>CONTACT</strong>
-            <a href="mailto:hello@nightlightbazaar.de">hello@nightlightbazaar.de</a>
-            <a href="tel:+4915206955117">+49 152 069 55 117</a>
-            <span>Neuss · Germany</span>
+          <div className="footer-column footer-social">
+            <strong>SOCIAL</strong>
+            <a href="https://www.instagram.com/nightlightbazaar/" target="_blank" rel="noreferrer">Instagram ↗</a>
+            <span>TikTok · @nightlightbazaar</span>
+          </div>
+
+          <div className="footer-column footer-legal">
+            <strong>LEGAL</strong>
+            <a href="/impressum">Impressum</a>
+            <a href="/datenschutz">Datenschutz</a>
           </div>
         </div>
 
         <div className="shell footer-bottom">
-          <span>© 2026 NIGHT LIGHT BAZAAR</span>
-          <div className="footer-legal-links">
-            <a href="/impressum">Impressum</a>
-            <a href="/datenschutz">Datenschutz</a>
-          </div>
+          <span>© 2026 NIGHT LIGHT BAZAAR · DÜSSELDORF</span>
+          <span>EDITION 01 · COMING SOON</span>
           <a className="footer-back" href="#top">BACK TO TOP ↑</a>
         </div>
       </footer>
