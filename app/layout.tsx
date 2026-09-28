@@ -1,10 +1,15 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
-export const viewport: Viewport = { themeColor: "#050505" };\n\nexport const metadata: Metadata = {
+export const viewport: Viewport = { themeColor: "#050505" };
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://nightlightbazaar.de"),
   title: "Night Light Bazaar — Night Vintage & Lifestyle Market Düsseldorf",
   description:
     "Kuratierter Night Vintage & Lifestyle Market in Düsseldorf mit Vintage Fashion, Streetwear, Sneakers, Design, Art, DJ-Sets, Food & Drinks.",
+  alternates: { canonical: "/" },
+  robots: { index: true, follow: true },
   icons: {
     icon: [{ url: "/favicon.png", type: "image/png", sizes: "256x256" }],
     apple: "/favicon.png",
