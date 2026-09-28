@@ -64,6 +64,7 @@ export default function Home() {
             <a href="#experience">Experience</a>
             <a href="#bazaar">Bazaar</a>
             <a href="#sellers">Sellers</a>
+            <a href="#music">Sound & Food</a>
             <a href="#partners">Brands</a>
           </div>
 
@@ -138,6 +139,7 @@ export default function Home() {
         <a href="#mobile-experience">Highlights</a>
         <a href="#mobile-bazaar">Bazaar</a>
         <a href="#mobile-sellers">Sell</a>
+        <a href="#mobile-music">Sound</a>
         <a href="#mobile-event">Event</a>
         <a href="#mobile-faq">FAQ</a>
       </nav>
@@ -239,6 +241,50 @@ export default function Home() {
               <article><span>FOOD</span><strong>FOOD & DRINKS</strong><p>Streetfood, Coffee, Matcha und Drinks.</p></article>
             </div>
             <p className="mobile-soon-note">Erste Namen & Brands folgen bald.</p>
+          </div>
+        </section>
+
+        <section className="mobile-sound-section" id="mobile-music">
+          <div className="shell">
+            <p className="mobile-label">SOUND OF THE NIGHT</p>
+            <h2>MUSIC IS PART<br /><span>OF THE EXPERIENCE.</span></h2>
+            <p className="mobile-sound-lead">Selected DJs begleiten den Bazaar vom frühen Abend bis in die Nacht — nicht als Hintergrund, sondern als Teil der Atmosphäre.</p>
+
+            <div className="mobile-sound-genres" aria-label="Music styles">
+              <span>HIP-HOP</span><span>HOUSE</span><span>R&amp;B</span><span>AFRO</span><span>SOUL</span><span>STREET CULTURE</span>
+            </div>
+
+            <div className="mobile-sound-visual" aria-hidden="true">
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+
+            <div className="mobile-sound-footer">
+              <span>FIRST NAMES · COMING SOON</span>
+              <a href="https://www.instagram.com/nightlightbazaar/" target="_blank" rel="noreferrer">FOLLOW THE LINE-UP ↗</a>
+            </div>
+          </div>
+        </section>
+
+        <section className="mobile-food-section" id="mobile-food">
+          <div className="shell">
+            <p className="mobile-label">EAT · DRINK · STAY</p>
+            <h2>COME FOR VINTAGE.<br /><span>STAY FOR MORE.</span></h2>
+            <p className="mobile-food-lead">Shopping macht hungrig. Deshalb gehören ausgewählte Food- und Drink-Konzepte genauso zum NIGHT LIGHT BAZAAR wie Fashion und Music.</p>
+
+            <div className="mobile-food-grid">
+              <article><span>01</span><strong>STREETFOOD</strong></article>
+              <article><span>02</span><strong>SWEET TREATS</strong></article>
+              <article><span>03</span><strong>COFFEE</strong></article>
+              <article><span>04</span><strong>MATCHA</strong></article>
+              <article><span>05</span><strong>APERITIVO</strong></article>
+              <article><span>06</span><strong>DRINKS</strong></article>
+            </div>
+
+            <div className="mobile-food-signoff">
+              <span>COME FOR VINTAGE.</span>
+              <span>STAY FOR FOOD.</span>
+              <strong>STAY LONGER FOR MUSIC.</strong>
+            </div>
           </div>
         </section>
 
@@ -531,6 +577,60 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="sound-of-night section" id="music">
+        <div className="shell sound-grid">
+          <div className="sound-copy">
+            <p className="section-kicker">SOUND OF THE NIGHT</p>
+            <h2>MUSIC IS PART<span>OF THE EXPERIENCE.</span></h2>
+            <p>Selected DJs begleiten den NIGHT LIGHT BAZAAR vom frühen Abend bis in die Nacht. Der Sound verändert sich mit der Stimmung — laid-back zum Ankommen, mehr Energie wenn es später wird.</p>
+
+            <div className="sound-genres" aria-label="Music styles">
+              <span>HIP-HOP</span><b>·</b><span>HOUSE</span><b>·</b><span>R&amp;B</span><b>·</b><span>AFRO</span><b>·</b><span>SOUL</span><b>·</b><span>STREET CULTURE</span>
+            </div>
+
+            <div className="sound-actions">
+              <a href="https://www.instagram.com/nightlightbazaar/" target="_blank" rel="noreferrer">FOLLOW THE LINE-UP <span>↗</span></a>
+              <small>FIRST NAMES · COMING SOON</small>
+            </div>
+          </div>
+
+          <div className="sound-stage" aria-hidden="true">
+            <div className="sound-stage-index">NLB / SOUND / 01</div>
+            <div className="sound-bars">
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+            <strong>AFTER DARK</strong>
+          </div>
+        </div>
+      </section>
+
+      <section className="eat-drink-stay section" id="food">
+        <div className="shell">
+          <div className="food-head">
+            <div>
+              <p className="section-kicker">EAT · DRINK · STAY</p>
+              <h2>COME FOR VINTAGE.<span>STAY FOR MORE.</span></h2>
+            </div>
+            <p>Shopping macht hungrig. Deshalb gehören ausgewählte Food- und Drink-Konzepte genauso zum NIGHT LIGHT BAZAAR wie Fashion, Design und Music.</p>
+          </div>
+
+          <div className="food-grid">
+            <article><span>01</span><strong>STREETFOOD</strong><small>SAVOURY / FRESH / CURATED</small></article>
+            <article><span>02</span><strong>SWEET TREATS</strong><small>DESSERTS / BITES / LATE-NIGHT</small></article>
+            <article><span>03</span><strong>COFFEE</strong><small>SPECIALTY / HOT / ICED</small></article>
+            <article><span>04</span><strong>MATCHA</strong><small>HOT / ICED / CLEAN</small></article>
+            <article><span>05</span><strong>APERITIVO</strong><small>EARLY EVENING / SOCIAL</small></article>
+            <article><span>06</span><strong>DRINKS</strong><small>BAR / NIGHT / STAY</small></article>
+          </div>
+
+          <div className="food-statement">
+            <span>COME FOR VINTAGE.</span>
+            <span>STAY FOR FOOD.</span>
+            <strong>STAY LONGER FOR MUSIC.</strong>
+          </div>
+        </div>
+      </section>
+
       <section className="brand-partnerships section" id="partners">
         <div className="shell">
           <div className="brand-partnerships-head">
@@ -646,7 +746,7 @@ export default function Home() {
             <details><summary>Brauche ich ein Ticket?</summary><p>Ticket- und Einlassinfos werden mit dem offiziellen Event-Launch veröffentlicht.</p></details>
             <details><summary>Wo findet der Bazaar statt?</summary><p>In Düsseldorf. Die genaue Location wird später bekannt gegeben.</p></details>
             <details><summary>Was erwartet mich?</summary><p>Vintage, Streetwear, Sneakers, Musik, Food, Drinks und ausgewählte kreative Konzepte.</p></details>
-            <details><summary>Kann ich selbst einen Stand machen?</summary><p>Ja. Bewerbungen für Seller, Brands und Food-Konzepte öffnen bald.</p></details>
+            <details><summary>Kann ich selbst einen Stand machen?</summary><p>Ja. Bewerbungen für Seller, Kreative und Food-&-Beverage-Konzepte sind möglich. Die Plätze sind limitiert und werden kuratiert vergeben.</p></details>
             <details><summary>Wie komme ich hin?</summary><p>Anreiseinfos folgen zusammen mit dem Location Reveal.</p></details>
           </div>
         </div>
