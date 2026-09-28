@@ -253,20 +253,41 @@ export default function Home() {
         </section>
       </section>
 
-      <section className="intro-story section">
-        <div className="shell intro-story-grid">
-          <p className="section-kicker">THE NIGHT LIGHT BAZAAR</p>
-          <p className="intro-story-text">
-            Ein kuratierter Night Vintage & Lifestyle Market in Düsseldorf — irgendwo zwischen Vintage Market,
-            Street Culture, Pop-up Event und Nightlife. Discover. Shop. Connect. Stay for the Night.
-          </p>
+      <section className="intro-story editorial-intro section">
+        <div className="shell editorial-intro-grid">
+          <aside className="editorial-folio" aria-label="Editorial section 01">
+            <span>01</span>
+            <small>NIGHT LIGHT BAZAAR<br />DÜSSELDORF</small>
+          </aside>
+
+          <div className="editorial-intro-copy">
+            <p className="section-kicker">THE NIGHT LIGHT BAZAAR</p>
+            <h2>
+              NOT JUST A MARKET.
+              <span>IT&apos;S A NIGHT OUT.</span>
+            </h2>
+            <p className="intro-story-text">
+              Ein kuratierter Night Vintage & Lifestyle Market in Düsseldorf — irgendwo zwischen Vintage Market,
+              Street Culture, Pop-up Event und Nightlife. Discover. Shop. Connect. Stay for the Night.
+            </p>
+          </div>
+
+          <div className="editorial-stamp" aria-hidden="true">
+            MORE THAN<br />JUST A MARKET
+          </div>
         </div>
       </section>
 
-      <section className="concept shell section" id="concept">
+      <section className="concept shell section editorial-concept" id="concept">
+        <div className="editorial-section-rail" aria-hidden="true">
+          <span>02</span>
+          <p>CONCEPT / CULTURE / AFTER DARK</p>
+        </div>
+
         <p className="section-kicker">THE CONCEPT</p>
         <div className="concept-grid">
           <h2>MORE THAN<br />A MARKET.</h2>
+
           <div className="concept-copy">
             <p>
               Vintage trifft Street Culture, Musik und Nightlife. NIGHT LIGHT BAZAAR verbindet einen kuratierten Market mit der Energie eines urbanen Abends.
@@ -279,6 +300,13 @@ export default function Home() {
               <span>DISCOVER. SHOP. CONNECT.</span>
               <span>STAY FOR THE NIGHT.</span>
             </div>
+          </div>
+
+          <div className="editorial-visual" aria-hidden="true">
+            <span className="vertical-type">NIGHT MARKET</span>
+            <div className="editorial-visual-light" />
+            <strong>CURATED.<br />NOT CROWDED.</strong>
+            <small>EDITION 01 · DÜSSELDORF</small>
           </div>
         </div>
       </section>
@@ -329,6 +357,13 @@ export default function Home() {
         <div className="audience-strip">
           <span>FOR</span>
           <strong>FASHION LOVERS</strong><strong>SNEAKERHEADS</strong><strong>CREATIVES</strong><strong>COLLECTORS</strong><strong>NIGHT OWLS</strong>
+        </div>
+      </section>
+
+      <section className="editorial-marquee" aria-label="Night Light Bazaar Statement">
+        <div className="editorial-marquee-track">
+          <span>SHOP</span><b>✦</b><span>DISCOVER</span><b>✦</b><span>CONNECT</span><b>✦</b><span>STAY</span><b>✦</b>
+          <span>SHOP</span><b>✦</b><span>DISCOVER</span><b>✦</b><span>CONNECT</span><b>✦</b><span>STAY</span><b>✦</b>
         </div>
       </section>
 
