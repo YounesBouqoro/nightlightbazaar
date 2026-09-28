@@ -46,8 +46,6 @@ const bazaarItems = [
   { number: "06", title: "MUSIC & NIGHTLIFE", copy: "DJs, sounds, lights & the atmosphere of the night.", meta: "AFTER DARK" },
 ];
 
-const partners = [];
-
 const partners = [
   "ANHEUSER-BUSCH",
   "RED BULL",
