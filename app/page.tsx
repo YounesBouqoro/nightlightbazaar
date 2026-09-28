@@ -1,29 +1,52 @@
 const experiences = [
   {
     number: "01",
-    title: "DISCOVER",
-    copy: "Vintage Fashion, Streetwear, Sneakers, Design und Kunst — ausgewählt statt beliebig.",
+    title: "SHOP",
+    copy: "Vintage, Streetwear, Sneakers, Collectibles und besondere Pieces — kuratiert statt beliebig.",
     meta: "CURATED FINDS",
   },
   {
     number: "02",
-    title: "SHOP",
-    copy: "Vintage Seller, Streetwear- und Sneaker-Händler, Designer, Artists und lokale Brands mit eigener Handschrift.",
-    meta: "SELECTED SELLERS",
+    title: "DISCOVER",
+    copy: "Independent Seller, lokale Brands, Designer und kreative Projekte mit eigener Handschrift.",
+    meta: "INDEPENDENT CULTURE",
   },
   {
     number: "03",
-    title: "CONNECT",
-    copy: "DJ-Sets, Kreative, Sammler und eine Community, die Fashion, Musik und Kultur zusammenbringt.",
-    meta: "MUSIC × COMMUNITY",
+    title: "LISTEN",
+    copy: "DJs, Sounds und ein Soundtrack, der den Bazaar vom frühen Abend bis in die Nacht begleitet.",
+    meta: "SOUND OF THE NIGHT",
   },
   {
     number: "04",
-    title: "STAY",
-    copy: "Streetfood, Coffee, Matcha und Drinks machen aus dem Market einen Abend, bei dem man gerne länger bleibt.",
-    meta: "FOOD × COFFEE × DRINKS",
+    title: "EAT",
+    copy: "Streetfood, Sweet Treats, Coffee und Matcha als fester Teil des Erlebnisses.",
+    meta: "FOOD CULTURE",
+  },
+  {
+    number: "05",
+    title: "DRINK",
+    copy: "Aperitivo, Cocktails, Beer und ausgewählte Drinks für den Abend.",
+    meta: "BAR CULTURE",
+  },
+  {
+    number: "06",
+    title: "CONNECT",
+    copy: "Menschen treffen, Stories austauschen und Teil einer neuen Community in Düsseldorf werden.",
+    meta: "COMMUNITY",
   },
 ];
+
+const bazaarItems = [
+  { number: "01", title: "VINTAGE", copy: "Rare finds. Iconic pieces. Second-hand treasures.", meta: "ARCHIVE / SECOND-HAND" },
+  { number: "02", title: "STREETWEAR", copy: "Independent labels, classics & new drops.", meta: "LABELS / DROPS" },
+  { number: "03", title: "SNEAKERS", copy: "Deadstock, pre-owned, collectibles & grails.", meta: "GRAILS / COLLECTIBLES" },
+  { number: "04", title: "DESIGN & ART", copy: "Prints, objects, photography, illustration & creative work.", meta: "OBJECTS / VISUAL CULTURE" },
+  { number: "05", title: "FOOD & DRINKS", copy: "Streetfood, coffee, matcha, sweets, aperitivo & drinks.", meta: "EAT / DRINK / STAY" },
+  { number: "06", title: "MUSIC & NIGHTLIFE", copy: "DJs, sounds, lights & the atmosphere of the night.", meta: "AFTER DARK" },
+];
+
+const partners = [];
 
 const partners = [
   "ANHEUSER-BUSCH",
@@ -49,7 +72,7 @@ export default function Home() {
           <div className="nav-links">
             <a href="#concept">Concept</a>
             <a href="#experience">Experience</a>
-            <a href="#selection">Selection</a>
+            <a href="#bazaar">Bazaar</a>
             <a href="#partners">Partner</a>
           </div>
 
@@ -120,18 +143,9 @@ export default function Home() {
 
 
 
-      <section className="event-snapshot" aria-label="Event auf einen Blick">
-        <div className="shell event-snapshot-grid">
-          <div><small>WHERE</small><strong>DÜSSELDORF</strong></div>
-          <div><small>WHEN</small><strong>DATE TBA</strong></div>
-          <div><small>TIME</small><strong>17:00 — 00:00</strong></div>
-          <div><small>FORMAT</small><strong>NIGHT MARKET</strong></div>
-        </div>
-      </section>
-
       <nav className="mobile-quick-nav" aria-label="Schnellnavigation">
         <a href="#mobile-experience">Highlights</a>
-        <a href="#mobile-whos-there">Who's there</a>
+        <a href="#mobile-bazaar">Bazaar</a>
         <a href="#mobile-event">Event</a>
         <a href="#mobile-faq">FAQ</a>
       </nav>
@@ -140,28 +154,48 @@ export default function Home() {
       <section className="mobile-landing" aria-label="Night Light Bazaar Mobile">
         <section className="mobile-intro-card" id="mobile-about">
           <div className="shell">
-            <p className="mobile-label">NIGHT LIGHT BAZAAR</p>
-            <h2>NIGHT MARKET.<br />AFTER DARK.</h2>
-            <p className="mobile-lead">Vintage, Streetwear, Sneakers, Musik, Food & Drinks — als modernes Night-Market-Erlebnis in Düsseldorf.</p>
+            <p className="mobile-label">THE NIGHT LIGHT BAZAAR</p>
+            <h2>NOT JUST A MARKET.<br /><span>IT&apos;S A NIGHT OUT.</span></h2>
+            <p className="mobile-lead">Vintage, Streetwear, Sneakers, Design, Art, Music, Food & Drinks an einem Ort — kuratiert für einen außergewöhnlichen Abend in Düsseldorf.</p>
             <div className="mobile-tags" aria-label="Highlights">
-              <span>VINTAGE</span><span>STREETWEAR</span><span>SNEAKERS</span><span>MUSIC</span><span>FOOD & DRINKS</span>
+              <span>SHOP</span><span>DISCOVER</span><span>LISTEN</span><span>EAT</span><span>DRINK</span><span>CONNECT</span>
             </div>
           </div>
         </section>
 
         <section className="mobile-experience-section" id="mobile-experience">
           <div className="shell">
-            <p className="mobile-label">THE EXPERIENCE</p>
-            <h2>WHAT TO EXPECT.</h2>
+            <p className="mobile-label">THE BAZAAR EXPERIENCE</p>
+            <h2>ONE NIGHT.<br />MANY MOMENTS.</h2>
             <div className="mobile-feature-list">
-              <article><span>01</span><div><h3>SHOP</h3><p>Kuratiertes Vintage, Streetwear und besondere Pieces.</p></div></article>
-              <article><span>02</span><div><h3>MUSIC</h3><p>DJ-Sets und entspannte Nightlife-Atmosphäre.</p></div></article>
-              <article><span>03</span><div><h3>FOOD & DRINKS</h3><p>Streetfood, Coffee, Matcha und ausgewählte Drinks.</p></div></article>
-              <article><span>04</span><div><h3>CONNECT</h3><p>Entdecken, Leute treffen und gemeinsam den Abend erleben.</p></div></article>
+              <article><span>01</span><div><h3>SHOP</h3><p>Vintage, Streetwear, Sneakers, Collectibles & unique finds.</p></div></article>
+              <article><span>02</span><div><h3>DISCOVER</h3><p>Independent Seller, lokale Brands, Designer & kreative Projekte.</p></div></article>
+              <article><span>03</span><div><h3>LISTEN</h3><p>DJs, Sounds und ein Soundtrack für die Nacht.</p></div></article>
+              <article><span>04</span><div><h3>EAT</h3><p>Streetfood, Sweet Treats, Coffee & Matcha.</p></div></article>
+              <article><span>05</span><div><h3>DRINK</h3><p>Aperitivo, Cocktails, Beer & ausgewählte Drinks.</p></div></article>
+              <article><span>06</span><div><h3>CONNECT</h3><p>Menschen treffen, Stories austauschen und Teil der Community werden.</p></div></article>
             </div>
           </div>
         </section>
 
+        <section className="mobile-bazaar-section" id="mobile-bazaar">
+          <div className="shell">
+            <p className="mobile-label">WHAT&apos;S AT THE BAZAAR</p>
+            <h2>SIX WORLDS.<br />ONE NIGHT.</h2>
+            <div className="mobile-bazaar-grid">
+              {bazaarItems.map((item) => (
+                <article key={item.number}>
+                  <span>{item.number}</span>
+                  <div>
+                    <h3>{item.title}</h3>
+                    <p>{item.copy}</p>
+                    <small>{item.meta}</small>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
 
         <section className="mobile-whos-section" id="mobile-whos-there">
           <div className="shell">
@@ -253,7 +287,7 @@ export default function Home() {
         </section>
       </section>
 
-      <section className="intro-story editorial-intro section">
+      <section className="intro-story editorial-intro section" id="concept">
         <div className="shell editorial-intro-grid">
           <aside className="editorial-folio" aria-label="Editorial section 01">
             <span>01</span>
@@ -267,9 +301,11 @@ export default function Home() {
               <span>IT&apos;S A NIGHT OUT.</span>
             </h2>
             <p className="intro-story-text">
-              Ein kuratierter Night Vintage & Lifestyle Market in Düsseldorf — irgendwo zwischen Vintage Market,
-              Street Culture, Pop-up Event und Nightlife. Discover. Shop. Connect. Stay for the Night.
+              NIGHT LIGHT BAZAAR bringt Vintage, Streetwear, Sneakers, Design, Art, Music, Food & Drinks an einem Ort zusammen.
+              Kein klassischer Flohmarkt. Keine anonyme Shoppinghalle. Sondern ein kuratierter Treffpunkt für Menschen,
+              die besondere Pieces suchen, neue Brands entdecken, gute Musik hören und gemeinsam einen außergewöhnlichen Abend erleben wollen.
             </p>
+            <div className="story-signoff">SHOP. DISCOVER. CONNECT. STAY.</div>
           </div>
 
           <div className="editorial-stamp" aria-hidden="true">
@@ -278,48 +314,15 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="concept shell section editorial-concept" id="concept">
-        <div className="editorial-section-rail" aria-hidden="true">
-          <span>02</span>
-          <p>CONCEPT / CULTURE / AFTER DARK</p>
-        </div>
-
-        <p className="section-kicker">THE CONCEPT</p>
-        <div className="concept-grid">
-          <h2>MORE THAN<br />A MARKET.</h2>
-
-          <div className="concept-copy">
-            <p>
-              Vintage trifft Street Culture, Musik und Nightlife. NIGHT LIGHT BAZAAR verbindet einen kuratierten Market mit der Energie eines urbanen Abends.
-            </p>
-            <p>
-              Hochwertig, kreativ und visuell besonders: ausgewählte Produkte, gutes Licht, DJ-Sets und ein Food-&-Beverage-Angebot, das zum Konzept passt. Bewusst kein Massenmarkt.
-            </p>
-            <div className="market-tags"><span>VINTAGE FASHION</span><span>STREETWEAR</span><span>SNEAKERS</span><span>DESIGN</span><span>ART</span><span>LOCAL BRANDS</span></div>
-            <div className="concept-note">
-              <span>DISCOVER. SHOP. CONNECT.</span>
-              <span>STAY FOR THE NIGHT.</span>
-            </div>
-          </div>
-
-          <div className="editorial-visual" aria-hidden="true">
-            <span className="vertical-type">NIGHT MARKET</span>
-            <div className="editorial-visual-light" />
-            <strong>CURATED.<br />NOT CROWDED.</strong>
-            <small>EDITION 01 · DÜSSELDORF</small>
-          </div>
-        </div>
-      </section>
-
       <section className="experience section" id="experience">
         <div className="shell">
           <div className="section-head">
             <div>
-              <p className="section-kicker">THE EXPERIENCE</p>
-              <h2>DISCOVER.<br />SHOP. STAY.</h2>
+              <p className="section-kicker">THE BAZAAR EXPERIENCE</p>
+              <h2>ONE NIGHT.<br />MANY MOMENTS.</h2>
             </div>
             <p>
-              Ein Abend zwischen Vintage Market, Street Culture, Pop-up Event und Nightlife — von 17 Uhr bis Mitternacht.
+              Shoppen, entdecken, zuhören, essen, trinken, connecten — sechs Teile einer gemeinsamen Night-Market-Experience.
             </p>
           </div>
 
@@ -339,6 +342,34 @@ export default function Home() {
         </div>
       </section>
 
+
+      <section className="bazaar-worlds section" id="bazaar">
+        <div className="shell">
+          <div className="bazaar-worlds-head">
+            <div>
+              <p className="section-kicker">WHAT&apos;S AT THE BAZAAR</p>
+              <h2>SIX WORLDS.<br /><span>ONE NIGHT.</span></h2>
+            </div>
+            <p>Von besonderen Pieces bis zum Sound der Nacht: Jede Kategorie bekommt Raum, Identität und ihren eigenen Moment.</p>
+          </div>
+
+          <div className="bazaar-worlds-grid">
+            {bazaarItems.map((item) => (
+              <article className={"bazaar-world-card bazaar-world-" + item.number} key={item.number}>
+                <div className="bazaar-world-visual" aria-hidden="true">
+                  <span>{item.number}</span>
+                  <i />
+                </div>
+                <div className="bazaar-world-copy">
+                  <small>{item.meta}</small>
+                  <h3>{item.title}</h3>
+                  <p>{item.copy}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
 
       <section className="selection shell section" id="selection">
         <div className="selection-intro">
@@ -413,6 +444,15 @@ export default function Home() {
             <span>BEVERAGE PARTNERS · EDITION 01</span>
             <span>MORE TO COME</span>
           </div>
+        </div>
+      </section>
+
+      <section className="event-snapshot" aria-label="Event auf einen Blick">
+        <div className="shell event-snapshot-grid">
+          <div><small>WHERE</small><strong>DÜSSELDORF</strong></div>
+          <div><small>WHEN</small><strong>DATE TBA</strong></div>
+          <div><small>TIME</small><strong>17:00 — 00:00</strong></div>
+          <div><small>FORMAT</small><strong>NIGHT MARKET</strong></div>
         </div>
       </section>
 
