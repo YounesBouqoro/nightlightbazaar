@@ -60,22 +60,43 @@ export default function Home() {
       </header>
 
       <section className="brand-hero" id="top">
+        <div className="hero-light-scene" aria-hidden="true">
+          <div className="hero-light-ring ring-one" />
+          <div className="hero-light-ring ring-two" />
+          <div className="hero-light-core" />
+        </div>
+
         <div className="shell brand-hero-inner">
-          <p className="headline-kicker">AFTER DARK · DÜSSELDORF</p>
+          <div className="hero-topline">
+            <p>URBAN MARKET &amp;<br />CULTURE EVENT</p>
+            <span className="hero-star" aria-hidden="true">✦</span>
+            <p>DÜSSELDORF<br />EDITION 01</p>
+          </div>
 
           <div className="headline-stage" aria-label="Night Light Bazaar">
-            <div className="headline-moon" />
+            <p className="headline-kicker">DÜSSELDORF&apos;S NIGHT VINTAGE &amp; LIFESTYLE MARKET</p>
 
             <h1 className="headline-title">
               <span className="line solid">NIGHT LIGHT</span>
-              <span className="line outline">BAZAAR</span>
+              <span className="line bazaar-script">BAZAAR</span>
             </h1>
 
-            <div className="hero-meta">
-              <span>17:00 — 00:00</span>
-              <span>NIGHT VINTAGE & LIFESTYLE MARKET</span>
-              <span>DATE TBA</span>
+            <p className="hero-subline">Vintage meets Street Culture, Music, Food &amp; Nightlife.</p>
+
+            <div className="hero-status">LOCATION &amp; DATE — COMING SOON</div>
+
+            <div className="hero-actions">
+              <a className="hero-cta hero-cta-primary" href="https://www.instagram.com/nightlightbazaar/" target="_blank" rel="noreferrer">
+                FOLLOW THE NIGHT <span>↗</span>
+              </a>
+              <a className="hero-cta hero-cta-secondary" href="mailto:hello@nightlightbazaar.de?subject=Seller%20Application%20%E2%80%94%20Night%20Light%20Bazaar">
+                SELL WITH US <span>↗</span>
+              </a>
             </div>
+          </div>
+
+          <div className="hero-bottomline" aria-label="Night Light Bazaar Kategorien">
+            <span>VINTAGE</span><b>/</b><span>STREETWEAR</span><b>/</b><span>SNEAKERS</span><b>/</b><span>DESIGN</span><b>/</b><span>ART</span><b>/</b><span>MUSIC</span><b>/</b><span>FOOD</span>
           </div>
         </div>
       </section>
