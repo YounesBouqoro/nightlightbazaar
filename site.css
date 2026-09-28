@@ -5319,3 +5319,621 @@ summary:focus-visible{
     scroll-behavior:auto;
   }
 }
+
+
+/* Mobile experience v14 — social editorial */
+.mobile-bottom-dock{display:none}
+
+@media(max-width:700px){
+  html{
+    scroll-padding-top:104px;
+  }
+
+  body{
+    padding-bottom:calc(76px + env(safe-area-inset-bottom));
+    background:#050505;
+  }
+
+  main{
+    overflow:clip;
+  }
+
+  /* Compact two-layer mobile chrome */
+  .nav-wrap{
+    position:sticky;
+    top:0;
+    z-index:100;
+    background:rgba(5,5,5,.92);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    border-bottom:1px solid rgba(242,239,232,.12);
+  }
+  .nav{
+    min-height:58px;
+    grid-template-columns:1fr auto;
+    gap:10px;
+  }
+  .brand{
+    gap:0;
+  }
+  .brand img{
+    display:none;
+  }
+  .brand span{
+    display:flex;
+    font-size:10px;
+    line-height:.9;
+    letter-spacing:-.03em;
+  }
+  .brand small{
+    margin-top:3px;
+    font-size:6px;
+    letter-spacing:.3em;
+  }
+  .pill-small{
+    min-height:32px;
+    padding:0 11px;
+    font-size:7px;
+    letter-spacing:.1em;
+  }
+
+  .mobile-quick-nav{
+    position:sticky;
+    top:58px;
+    z-index:90;
+    display:flex;
+    gap:7px;
+    padding:7px 14px 8px;
+    overflow-x:auto;
+    overscroll-behavior-x:contain;
+    scroll-snap-type:x proximity;
+    white-space:nowrap;
+    background:rgba(5,5,5,.9);
+    border-bottom:1px solid rgba(242,239,232,.12);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    scrollbar-width:none;
+    -webkit-mask-image:linear-gradient(90deg,#000 0,#000 92%,transparent 100%);
+    mask-image:linear-gradient(90deg,#000 0,#000 92%,transparent 100%);
+  }
+  .mobile-quick-nav::-webkit-scrollbar{display:none}
+  .mobile-quick-nav a{
+    flex:0 0 auto;
+    min-height:30px;
+    padding:0 11px;
+    display:flex;
+    align-items:center;
+    border:1px solid rgba(242,239,232,.16);
+    scroll-snap-align:start;
+    color:rgba(242,239,232,.72);
+    background:rgba(255,255,255,.015);
+    font-size:6.8px;
+    font-weight:900;
+    letter-spacing:.11em;
+    text-transform:uppercase;
+  }
+  .mobile-quick-nav a:active{
+    color:#050505;
+    background:#f2efe8;
+  }
+
+  /* Hero is treated as the cover of the mobile editorial */
+  .brand-hero{
+    min-height:calc(100svh - 58px);
+  }
+  .brand-hero-inner{
+    min-height:calc(100svh - 58px);
+    padding:18px 0 18px;
+    gap:10px;
+  }
+  .hero-topline{
+    font-size:6px;
+    line-height:1.35;
+    letter-spacing:.12em;
+  }
+  .hero-star{
+    font-size:12px;
+  }
+  .headline-stage{
+    padding:10px 0 10px;
+  }
+  .headline-kicker{
+    max-width:260px;
+    margin-bottom:15px;
+    font-size:6.6px;
+    line-height:1.45;
+    letter-spacing:.14em;
+  }
+  .headline-title .solid{
+    font-size:clamp(41px,13.1vw,57px);
+  }
+  .headline-title .bazaar-script{
+    margin-top:5px;
+    font-size:clamp(48px,15.2vw,66px);
+  }
+  .hero-subline{
+    max-width:285px;
+    margin-top:22px;
+    font-size:12px;
+    line-height:1.45;
+  }
+  .hero-status{
+    margin-top:13px;
+    padding:7px 9px;
+    font-size:6.3px;
+  }
+  .hero-actions{
+    width:min(100%,320px);
+    margin-top:15px;
+    gap:7px;
+  }
+  .hero-cta{
+    min-height:42px;
+    font-size:7px;
+  }
+  .hero-bottomline{
+    gap:9px;
+    padding-top:4px;
+    font-size:6px;
+  }
+  .hero-light-core{
+    top:40%;
+    width:min(56vw,220px);
+  }
+  .ring-one{
+    top:40%;
+    width:min(86vw,350px);
+  }
+  .ring-two{
+    top:40%;
+    width:min(124vw,500px);
+  }
+  .ticker-track{
+    padding:9px 0 8px;
+    gap:17px;
+    font-size:7.5px;
+  }
+
+  /* Chapter system: every section reads like an editorial slide */
+  .mobile-landing{
+    counter-reset:mobileChapter;
+    background:#050505;
+  }
+  .mobile-landing>section[data-chapter]{
+    position:relative;
+    overflow:hidden;
+    scroll-margin-top:103px;
+    counter-increment:mobileChapter;
+  }
+  .mobile-landing>section[data-chapter]::after{
+    content:attr(data-chapter);
+    position:absolute;
+    top:13px;
+    right:14px;
+    z-index:0;
+    color:currentColor;
+    opacity:.12;
+    font-size:44px;
+    font-weight:950;
+    line-height:.8;
+    letter-spacing:-.06em;
+    pointer-events:none;
+  }
+  .mobile-landing>section[data-chapter]>.shell{
+    position:relative;
+    z-index:1;
+  }
+  .mobile-label{
+    margin-bottom:11px;
+    font-size:6.8px;
+    letter-spacing:.16em;
+  }
+  .mobile-landing h2{
+    text-wrap:balance;
+  }
+
+  /* Intro: compact, strong, swipeable tag rail */
+  .mobile-intro-card{
+    padding:54px 0 48px;
+  }
+  .mobile-intro-card h2{
+    font-size:clamp(42px,12vw,54px);
+    line-height:.86;
+  }
+  .mobile-lead{
+    max-width:335px;
+    margin-top:20px;
+    font-size:14px;
+    line-height:1.58;
+  }
+  .mobile-tags{
+    width:calc(100% + 14px);
+    margin-top:24px;
+    padding-right:14px;
+    display:flex;
+    flex-wrap:nowrap;
+    gap:6px;
+    overflow-x:auto;
+    scroll-snap-type:x proximity;
+    scrollbar-width:none;
+  }
+  .mobile-tags::-webkit-scrollbar{display:none}
+  .mobile-tags span{
+    flex:0 0 auto;
+    scroll-snap-align:start;
+    padding:8px 9px;
+    font-size:6.8px;
+  }
+
+  /* Experience reads as a sequenced story instead of utility rows */
+  .mobile-experience-section{
+    padding:58px 0;
+  }
+  .mobile-experience-section h2{
+    font-size:clamp(41px,12vw,53px);
+    line-height:.86;
+  }
+  .mobile-feature-list{
+    margin-top:32px;
+  }
+  .mobile-feature-list article{
+    min-height:112px;
+    padding:20px 0;
+    grid-template-columns:28px 1fr;
+    align-items:start;
+  }
+  .mobile-feature-list article:nth-child(even){
+    padding-left:28px;
+  }
+  .mobile-feature-list article>span{
+    padding-top:3px;
+    font-size:7px;
+  }
+  .mobile-feature-list h3{
+    margin-bottom:7px;
+    font-size:29px;
+    line-height:.92;
+  }
+  .mobile-feature-list p{
+    max-width:285px;
+    font-size:13px;
+    line-height:1.55;
+  }
+
+  /* Bazaar becomes a horizontal visual story – closer to a social carousel */
+  .mobile-bazaar-section{
+    padding:58px 0 60px;
+  }
+  .mobile-bazaar-section h2{
+    font-size:clamp(41px,12vw,53px);
+    line-height:.86;
+  }
+  .mobile-bazaar-grid{
+    position:relative;
+    width:calc(100% + 14px);
+    margin-top:30px;
+    padding:0 14px 4px 0;
+    display:flex;
+    gap:10px;
+    overflow-x:auto;
+    overscroll-behavior-x:contain;
+    scroll-snap-type:x mandatory;
+    scrollbar-width:none;
+  }
+  .mobile-bazaar-grid::-webkit-scrollbar{display:none}
+  .mobile-bazaar-grid:after{
+    content:"SWIPE →";
+    flex:0 0 48px;
+    align-self:center;
+    color:rgba(242,239,232,.34);
+    font-size:6px;
+    font-weight:900;
+    letter-spacing:.12em;
+    writing-mode:vertical-rl;
+  }
+  .mobile-bazaar-grid article{
+    flex:0 0 min(82vw,330px);
+    min-height:278px;
+    padding:18px;
+    scroll-snap-align:center;
+    grid-template-columns:30px 1fr;
+    background:
+      radial-gradient(circle at 76% 20%,rgba(255,255,255,.075),transparent 31%),
+      linear-gradient(150deg,rgba(255,255,255,.02),transparent 42%),
+      #050505;
+  }
+  .mobile-bazaar-grid article:nth-child(even){
+    background:
+      radial-gradient(circle at 24% 78%,rgba(255,255,255,.065),transparent 30%),
+      #050505;
+  }
+  .mobile-bazaar-grid h3{
+    margin-top:auto;
+    font-size:30px;
+  }
+  .mobile-bazaar-grid article>div{
+    min-height:240px;
+  }
+  .mobile-bazaar-grid p{
+    max-width:240px;
+  }
+
+  /* Curated block gets a stronger full-screen-like pause */
+  .mobile-curated-section{
+    padding-top:64px;
+  }
+  .mobile-curated-section h2{
+    font-size:clamp(46px,13.5vw,59px);
+  }
+  .mobile-curated-rules article{
+    min-height:108px;
+  }
+  .mobile-curated-signoff{
+    margin-top:34px;
+    padding-block:20px;
+    gap:10px;
+    overflow-x:auto;
+    justify-content:flex-start;
+  }
+  .mobile-curated-signoff span{
+    flex:0 0 auto;
+    font-size:11px;
+  }
+
+  /* Seller content keeps density but gains more touch-friendly rhythm */
+  .mobile-seller-call{
+    padding-top:62px;
+  }
+  .mobile-seller-call h2{
+    font-size:clamp(43px,12.7vw,56px);
+  }
+  .mobile-seller-types article{
+    min-height:132px;
+    padding:20px 0;
+  }
+  .mobile-seller-types strong{
+    font-size:23px;
+  }
+  .mobile-seller-cta a:first-child{
+    min-height:52px;
+  }
+
+  /* Who's there becomes swipeable reveal cards */
+  .mobile-whos-section{
+    padding:58px 0;
+  }
+  .mobile-whos-grid{
+    width:calc(100% + 14px);
+    margin-top:28px;
+    padding-right:14px;
+    display:flex;
+    gap:9px;
+    overflow-x:auto;
+    border:0;
+    scroll-snap-type:x mandatory;
+    scrollbar-width:none;
+  }
+  .mobile-whos-grid::-webkit-scrollbar{display:none}
+  .mobile-whos-grid article{
+    flex:0 0 min(78vw,310px);
+    min-height:180px;
+    padding:18px;
+    display:flex;
+    flex-direction:column;
+    gap:7px;
+    border:1px solid rgba(242,239,232,.15);
+    scroll-snap-align:center;
+    background:
+      radial-gradient(circle at 84% 18%,rgba(255,255,255,.055),transparent 32%),
+      #050505;
+  }
+  .mobile-whos-grid article>span{
+    padding:0;
+    font-size:6.8px;
+  }
+  .mobile-whos-grid strong{
+    margin-top:auto;
+    font-size:27px;
+    line-height:.94;
+  }
+  .mobile-whos-grid p{
+    margin-top:2px;
+    font-size:12.5px;
+  }
+
+  /* Sound and reveal visuals go full bleed for a reel-like break */
+  .mobile-sound-section{
+    padding:62px 0;
+  }
+  .mobile-sound-visual{
+    width:calc(100% + 28px);
+    height:190px;
+    margin-left:-14px;
+    border-left:0;
+    border-right:0;
+  }
+  .mobile-sound-genres{
+    flex-wrap:nowrap;
+    width:calc(100% + 14px);
+    padding-right:14px;
+    overflow-x:auto;
+    scrollbar-width:none;
+  }
+  .mobile-sound-genres::-webkit-scrollbar{display:none}
+  .mobile-sound-genres span{
+    flex:0 0 auto;
+  }
+
+  .mobile-food-section{
+    padding-top:62px;
+  }
+  .mobile-food-grid article{
+    min-height:100px;
+  }
+  .mobile-food-signoff{
+    padding-top:25px;
+    padding-bottom:28px;
+  }
+
+  .mobile-edition-reveal{
+    padding-top:62px;
+  }
+  .mobile-clue-visual{
+    width:calc(100% + 28px);
+    height:270px;
+    margin-left:-14px;
+    border-left:0;
+    border-right:0;
+  }
+  .mobile-clue-visual>strong{
+    font-size:138px;
+  }
+
+  /* Partnership content: visual grid stays scannable, statement gets reel-like scale */
+  .mobile-brand-partnerships{
+    padding-top:62px;
+  }
+  .mobile-activation-grid span{
+    min-height:74px;
+  }
+  .mobile-brand-statement{
+    padding-top:38px;
+    padding-bottom:38px;
+  }
+
+  /* FAQ: large, clean tap targets */
+  .mobile-faq-section{
+    padding:58px 0 76px;
+  }
+  .mobile-faq-section .faq-list{
+    margin-top:28px;
+    border-top:1px solid rgba(242,239,232,.16);
+  }
+  .mobile-faq-section .faq-list details{
+    border-bottom:1px solid rgba(242,239,232,.16);
+  }
+  .mobile-faq-section .faq-list summary{
+    min-height:60px;
+    padding:0 2px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:16px;
+    list-style:none;
+    font-size:13px;
+    line-height:1.35;
+  }
+  .mobile-faq-section .faq-list summary::-webkit-details-marker{display:none}
+  .mobile-faq-section .faq-list summary:after{
+    content:"+";
+    flex:0 0 auto;
+    color:rgba(242,239,232,.52);
+    font-size:20px;
+    font-weight:400;
+  }
+  .mobile-faq-section .faq-list details[open] summary:after{
+    content:"−";
+  }
+  .mobile-faq-section .faq-list details p{
+    padding-right:26px;
+    font-size:13px;
+    line-height:1.58;
+  }
+
+  /* Persistent mobile actions: social first, conversion second */
+  .mobile-bottom-dock{
+    position:fixed;
+    z-index:140;
+    left:10px;
+    right:10px;
+    bottom:max(8px,env(safe-area-inset-bottom));
+    display:grid;
+    grid-template-columns:1.25fr .75fr;
+    gap:6px;
+    padding:6px;
+    background:rgba(5,5,5,.84);
+    border:1px solid rgba(242,239,232,.15);
+    box-shadow:0 16px 42px rgba(0,0,0,.42);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+  }
+  .mobile-bottom-dock a{
+    min-height:46px;
+    padding:0 11px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:2px;
+    font-size:6px;
+    font-weight:850;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+  }
+  .mobile-bottom-dock a strong{
+    font-size:8px;
+    font-weight:950;
+    letter-spacing:.08em;
+  }
+  .mobile-dock-follow{
+    color:#050505;
+    background:#f2efe8;
+  }
+  .mobile-dock-sell{
+    color:#f2efe8;
+    background:#050505;
+    border:1px solid rgba(242,239,232,.24);
+  }
+  .mobile-sticky-cta{
+    display:none!important;
+  }
+
+  /* Mobile footer is intentionally quiet */
+  .footer{
+    padding-bottom:calc(76px + env(safe-area-inset-bottom));
+  }
+  .footer-inner{
+    min-height:110px;
+    grid-template-columns:1fr auto;
+    gap:18px;
+    align-items:center;
+  }
+  .footer-brand{
+    justify-self:start;
+  }
+  .footer-brand span{
+    display:flex;
+  }
+  .footer-links{
+    gap:12px;
+    font-size:6.8px;
+  }
+  .footer-back{
+    display:none;
+  }
+
+  /* Tighter phones */
+  @media(max-width:370px){
+    .mobile-quick-nav{
+      padding-inline:10px;
+    }
+    .headline-title .solid{font-size:39px}
+    .headline-title .bazaar-script{font-size:45px}
+    .hero-subline{font-size:11.5px}
+    .mobile-bazaar-grid article{flex-basis:84vw}
+    .mobile-bottom-dock{
+      left:7px;
+      right:7px;
+      gap:4px;
+      padding:4px;
+    }
+  }
+}
+
+@media(prefers-reduced-motion:reduce){
+  .mobile-bazaar-grid,
+  .mobile-whos-grid,
+  .mobile-tags,
+  .mobile-sound-genres{
+    scroll-behavior:auto!important;
+  }
+}
