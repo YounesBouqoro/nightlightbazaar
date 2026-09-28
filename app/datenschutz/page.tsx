@@ -2,7 +2,7 @@ export default function DatenschutzPage() {
   return (
     <main className="legal-body">
       <header className="nav-wrap">
-        <nav className="nav shell">
+        <nav className="nav shell" aria-label="Hauptnavigation">
           <a className="brand" href="/" aria-label="Night Light Bazaar Startseite">
             <img src="/favicon.png" alt="" />
             <span>NIGHT LIGHT<small>BAZAAR</small></span>
@@ -23,9 +23,9 @@ export default function DatenschutzPage() {
 
             <section><h2>3. Kontaktaufnahme</h2><p>Wenn du uns per E-Mail oder telefonisch kontaktierst, verarbeiten wir die von dir übermittelten Angaben, um deine Anfrage zu bearbeiten. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, soweit es um vorvertragliche oder vertragliche Kommunikation geht, und im Übrigen Art. 6 Abs. 1 lit. f DSGVO aufgrund unseres berechtigten Interesses an der Beantwortung von Anfragen.</p><p>Die Daten werden gelöscht, sobald sie für die Bearbeitung nicht mehr erforderlich sind und keine gesetzlichen Aufbewahrungspflichten entgegenstehen.</p></section>
 
-            <section><h2>4. Analyse, Tracking und Newsletter</h2><p>Aktuell setzen wir auf dieser Website keine eigenen Analyse- oder Marketing-Trackingtools ein. Es gibt derzeit außerdem kein aktives Newsletter- oder Kontaktformular, über das personenbezogene Daten direkt auf der Website erhoben werden.</p></section>
+            <section><h2>4. Analyse, Tracking und Formulare</h2><p>Aktuell setzen wir auf dieser Website keine eigenen Analyse- oder Marketing-Trackingtools ein. Es gibt derzeit außerdem kein aktives Newsletter- oder Kontaktformular, über das personenbezogene Daten direkt auf der Website erhoben werden.</p><p>Seller- und Partneranfragen werden über normale E-Mail-Links vorbereitet. Die Website übermittelt dabei nicht selbstständig Formulardaten; die Nachricht wird erst über das vom Nutzer verwendete E-Mail-Programm versendet.</p></section>
 
-            <section><h2>5. Externe Inhalte und Links</h2><p>Partnerlogos und sonstige Bilder werden derzeit direkt über diese Website ausgeliefert. Bei Links zu externen Websites gelten die Datenschutzbestimmungen des jeweiligen Anbieters, sobald du den externen Link aufrufst.</p></section>
+            <section><h2>5. Externe Inhalte und Links</h2><p>Bilder und grafische Inhalte werden derzeit direkt über diese Website ausgeliefert. Social-Media-Inhalte werden nicht als eingebettete Plugins geladen.</p><p>Die Website enthält normale externe Links, insbesondere zu Instagram. Erst wenn du einen solchen Link aufrufst, wechselst du zum jeweiligen externen Anbieter; dort gelten dessen Datenschutzbestimmungen.</p></section>
 
             <section><h2>6. Deine Rechte</h2><p>Du hast im Rahmen der gesetzlichen Voraussetzungen insbesondere das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit sowie Widerspruch gegen bestimmte Verarbeitungen. Eine erteilte Einwilligung kannst du jederzeit mit Wirkung für die Zukunft widerrufen.</p><p>Zur Ausübung deiner Rechte kannst du dich an <a href="mailto:hello@nightlightbazaar.de">hello@nightlightbazaar.de</a> wenden.</p></section>
 
@@ -41,10 +41,17 @@ export default function DatenschutzPage() {
         </div>
       </section>
 
-      <footer className="footer">
-        <div className="shell footer-inner">
-          <a className="brand footer-brand" href="/"><img src="/favicon.png" alt="" /><span>NIGHT LIGHT<small>BAZAAR</small></span></a>
-          <div className="footer-links"><a href="/impressum">Impressum</a><a className="is-active" href="/datenschutz">Datenschutz</a></div>
+      <footer className="footer legal-footer">
+        <div className="shell legal-footer-grid">
+          <a className="brand footer-brand" href="/" aria-label="Night Light Bazaar Startseite"><span>NIGHT LIGHT<small>BAZAAR</small></span></a>
+          <div className="legal-footer-contact">
+            <a href="mailto:hello@nightlightbazaar.de">hello@nightlightbazaar.de</a>
+            <a href="tel:+4915206955117">+49 152 069 55 117</a>
+          </div>
+          <div className="footer-legal-links">
+            <a href="/impressum">Impressum</a>
+            <a className="is-active" href="/datenschutz">Datenschutz</a>
+          </div>
           <a className="footer-back" href="/">STARTSEITE ↑</a>
         </div>
       </footer>
