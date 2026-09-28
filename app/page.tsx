@@ -311,7 +311,7 @@ export default function Home() {
               <details><summary>Brauche ich ein Ticket?</summary><p>Ticket- und Einlassinfos werden mit dem offiziellen Event-Launch veröffentlicht.</p></details>
               <details><summary>Wo findet der Bazaar statt?</summary><p>In Düsseldorf. Die genaue Location wird zu einem späteren Zeitpunkt bekannt gegeben.</p></details>
               <details><summary>Was erwartet mich?</summary><p>Vintage, Streetwear, Sneakers, Musik, Food, Drinks und ausgewählte kreative Konzepte.</p></details>
-              <details><summary>Kann ich selbst einen Stand machen?</summary><p>Ja. Bewerbungen für Seller, Brands und Food-Konzepte öffnen bald.</p></details>
+              <details><summary>Kann ich selbst einen Stand machen?</summary><p>Ja. Bewerbungen für Seller, Kreative und Food-&-Beverage-Konzepte sind möglich. Die Plätze sind limitiert und werden kuratiert vergeben.</p></details>
               <details><summary>Wie komme ich hin?</summary><p>ÖPNV-, Fahrrad- und weitere Anreiseinfos folgen zusammen mit der Location.</p></details>
             </div>
           </div>
