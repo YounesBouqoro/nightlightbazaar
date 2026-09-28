@@ -5937,3 +5937,74 @@ summary:focus-visible{
     scroll-behavior:auto!important;
   }
 }
+
+
+/* Navigation v15 — simplified information architecture */
+#concept,
+#experience,
+#sellers,
+#event,
+#faq{
+  scroll-margin-top:96px;
+}
+
+.nav-links{
+  gap:32px;
+}
+.nav-links a{
+  position:relative;
+  padding:8px 0;
+  opacity:.62;
+}
+.nav-links a:after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:100%;
+  bottom:2px;
+  height:1px;
+  background:#f2efe8;
+  transition:right .18s ease;
+}
+.nav-links a:hover:after,
+.nav-links a:focus-visible:after{
+  right:0;
+}
+.desktop-header-cta{
+  white-space:nowrap;
+}
+.mobile-header-cta{
+  display:none;
+}
+
+@media(max-width:1000px){
+  .nav-links{display:none}
+}
+
+@media(max-width:700px){
+  #mobile-about,
+  #mobile-experience,
+  #mobile-sellers,
+  #mobile-event,
+  #mobile-faq{
+    scroll-margin-top:104px;
+  }
+
+  .desktop-header-cta{
+    display:none!important;
+  }
+  .mobile-header-cta{
+    display:inline-flex;
+    min-height:32px;
+    padding:0 10px;
+    white-space:nowrap;
+  }
+
+  .mobile-quick-nav{
+    justify-content:flex-start;
+  }
+  .mobile-quick-nav a{
+    min-height:30px;
+    padding-inline:12px;
+  }
+}
