@@ -2909,3 +2909,9 @@ summary:focus-visible{
     scroll-behavior:auto;
   }
 }
+
+
+/* Story flow v8.1 — mobile duplicate guard */
+@media(max-width:700px){
+  .bazaar-worlds{display:none}
+}
