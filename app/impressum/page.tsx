@@ -1,5 +1,6 @@
 export const metadata = {
   title: "Impressum — Night Light Bazaar",
+  alternates: { canonical: "/impressum" },
   description: "Impressum und Kontaktangaben von Night Light Bazaar.",
 };
 
