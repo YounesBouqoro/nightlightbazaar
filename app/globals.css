@@ -6468,3 +6468,19 @@ summary:focus-visible{
   .site-footer{padding-bottom:calc(92px + env(safe-area-inset-bottom))}
   .legal-body{padding-bottom:0}
 }
+
+
+/* QA v17.1 — responsive footer links */
+.footer-link-set{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:11px;
+}
+.footer-mobile-links{display:none}
+
+@media(max-width:700px){
+  .footer-desktop-links{display:none}
+  .footer-mobile-links{display:flex}
+  .footer-link-set{gap:10px}
+}
