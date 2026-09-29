@@ -11,16 +11,20 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
   robots: { index: true, follow: true },
   icons: {
-    icon: [{ url: "/favicon.png", type: "image/png", sizes: "256x256" }],
-    apple: "/favicon.png",
+    icon: [{ url: "/brand-mark.svg", type: "image/svg+xml" }],
+    apple: "/brand-mark.svg",
   },
   openGraph: {
     title: "Night Light Bazaar — Düsseldorf After Dark",
     description: "Vintage, Streetwear, Sneakers, Musik, Food & Drinks — als moderner Night Market in Düsseldorf.",
     url: "https://nightlightbazaar.de/",
     siteName: "Night Light Bazaar",
-    images: ["/favicon.png"],
     type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Night Light Bazaar",
+    description: "Night Vintage & Lifestyle Market in Düsseldorf.",
   },
 };
 
