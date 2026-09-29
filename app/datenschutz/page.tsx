@@ -1,5 +1,6 @@
 export const metadata = {
   title: "Datenschutz — Night Light Bazaar",
+  alternates: { canonical: "/datenschutz" },
   description: "Datenschutzhinweise von Night Light Bazaar.",
 };
 
