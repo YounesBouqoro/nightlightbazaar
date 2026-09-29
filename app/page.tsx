@@ -809,17 +809,32 @@ export default function Home() {
 
           <nav className="footer-column" aria-label="Footer Navigation">
             <strong>EXPLORE</strong>
-            <a href="#concept">Concept</a>
-            <a href="#experience">Experience</a>
-            <a href="#sellers">Sellers</a>
-            <a href="#event">Edition 01</a>
-            <a href="#faq">FAQ</a>
+            <div className="footer-link-set footer-desktop-links">
+              <a href="#concept">Concept</a>
+              <a href="#experience">Experience</a>
+              <a href="#sellers">Sellers</a>
+              <a href="#event">Edition 01</a>
+              <a href="#faq">FAQ</a>
+            </div>
+            <div className="footer-link-set footer-mobile-links">
+              <a href="#mobile-about">About</a>
+              <a href="#mobile-experience">Experience</a>
+              <a href="#mobile-sellers">Sellers</a>
+              <a href="#mobile-event">Edition 01</a>
+              <a href="#mobile-faq">FAQ</a>
+            </div>
           </nav>
 
           <div className="footer-column">
             <strong>JOIN</strong>
-            <a href="#sellers">Become a Seller</a>
-            <a href="#partners">Become a Partner</a>
+            <div className="footer-link-set footer-desktop-links">
+              <a href="#sellers">Become a Seller</a>
+              <a href="#partners">Become a Partner</a>
+            </div>
+            <div className="footer-link-set footer-mobile-links">
+              <a href="#mobile-sellers">Become a Seller</a>
+              <a href="#mobile-partners">Become a Partner</a>
+            </div>
             <a href="mailto:hello@nightlightbazaar.de">Contact</a>
           </div>
 
