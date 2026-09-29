@@ -48,11 +48,10 @@ const bazaarItems = [
 
 export default function Home() {
   return (
-    <main>
+    <>
       <header className="nav-wrap">
         <nav className="nav shell" aria-label="Hauptnavigation">
           <a className="brand" href="#top" aria-label="Night Light Bazaar Startseite">
-            <img src="/favicon.png" alt="" />
             <span>
               NIGHT LIGHT
               <small>BAZAAR</small>
@@ -76,6 +75,7 @@ export default function Home() {
         </nav>
       </header>
 
+      <main>
       <section className="brand-hero" id="top">
         <div className="hero-light-scene" aria-hidden="true">
           <div className="hero-light-ring ring-one" />
@@ -794,6 +794,8 @@ export default function Home() {
 
 
 
+      </main>
+
       <footer className="footer site-footer">
         <div className="shell footer-main-grid">
           <div className="footer-brand-block">
@@ -840,6 +842,6 @@ export default function Home() {
           <a className="footer-back" href="#top">BACK TO TOP ↑</a>
         </div>
       </footer>
-    </main>
+    </>
   );
 }
