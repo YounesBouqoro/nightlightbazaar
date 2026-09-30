@@ -8129,3 +8129,50 @@ html,body{max-width:100%;overflow-x:clip}
   }
   .home-social h2{font-size:50px}
 }
+
+
+/* Landing-page visual QA v29 */
+.home-edition-status-compact{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+}
+.home-edition-status-compact article{
+  min-height:190px;
+}
+
+@media(max-width:700px){
+  /* Keep the first screen focused: one header, no redundant metadata rails. */
+  .home-hero .hero-topline,
+  .home-hero .hero-bottomline,
+  .home-hero .headline-kicker{
+    display:none;
+  }
+
+  .home-hero{
+    min-height:calc(100svh - 58px);
+  }
+  .home-hero-inner{
+    min-height:calc(100svh - 58px);
+    padding-top:22px;
+    padding-bottom:18px;
+  }
+
+  .home-headline-stage{
+    width:100%;
+  }
+
+  .home-hero .headline-title{
+    margin-top:0;
+  }
+
+  .home-hero-pitch{
+    max-width:34ch;
+    margin-top:18px;
+  }
+
+  .home-edition-status-compact{
+    grid-template-columns:1fr;
+  }
+  .home-edition-status-compact article{
+    min-height:126px;
+  }
+}
