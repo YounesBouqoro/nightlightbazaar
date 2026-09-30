@@ -7220,3 +7220,202 @@ summary:focus-visible{
   .experience-sound-card{min-height:300px}
   .experience-rules article{grid-template-columns:34px 1fr}
 }
+
+
+/* Edition 01 page v23 */
+.edition-status,
+.edition-mystery,
+.edition-whos,
+.edition-faq,
+.edition-follow{padding:96px 0}
+
+.edition-status{background:#050505;color:#f2efe8}
+.edition-status-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:1px;
+  background:rgba(242,239,232,.14);
+  border:1px solid rgba(242,239,232,.14)
+}
+.edition-status article{
+  min-height:240px;
+  padding:24px;
+  background:#090909;
+  display:flex;
+  flex-direction:column
+}
+.edition-status article>span,
+.edition-status small,
+.edition-status em{
+  font-size:7px;
+  font-weight:950;
+  letter-spacing:.14em;
+  font-style:normal
+}
+.edition-status article>span,
+.edition-status small{color:rgba(242,239,232,.34)}
+.edition-status strong{
+  margin:auto 0 10px;
+  font-size:clamp(24px,2.7vw,42px);
+  line-height:.9;
+  letter-spacing:-.045em
+}
+.edition-status em{color:rgba(242,239,232,.68)}
+
+.edition-mystery{
+  background:#f2efe8;
+  color:#050505
+}
+.edition-mystery-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(340px,.8fr);
+  gap:72px;
+  align-items:center
+}
+.edition-mystery-copy h2,
+.edition-section-head h2,
+.edition-faq h2,
+.edition-follow h2{
+  margin:12px 0 20px;
+  font-size:clamp(52px,7vw,104px);
+  line-height:.84;
+  letter-spacing:-.06em;
+  font-weight:950
+}
+.edition-mystery-copy h2 span,
+.edition-section-head h2 span{color:rgba(5,5,5,.34)}
+.edition-mystery-copy>p:not(.section-kicker),
+.edition-section-head>p{
+  max-width:660px;
+  color:rgba(5,5,5,.65);
+  font-size:18px;
+  line-height:1.55;
+  margin-bottom:28px
+}
+.edition-mystery-visual{
+  min-height:430px;
+  padding:28px;
+  border:1px solid rgba(5,5,5,.16);
+  background:
+    linear-gradient(rgba(5,5,5,.035) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(5,5,5,.035) 1px,transparent 1px),
+    #e9e5dc;
+  background-size:34px 34px;
+  display:flex;
+  flex-direction:column
+}
+.edition-mystery-visual small,
+.edition-mystery-visual span{
+  font-size:7px;
+  font-weight:950;
+  letter-spacing:.15em;
+  color:rgba(5,5,5,.42)
+}
+.edition-mystery-visual strong{
+  margin:auto;
+  font-size:clamp(120px,16vw,220px);
+  line-height:.7;
+  letter-spacing:-.08em
+}
+
+.edition-whos{background:#050505;color:#f2efe8}
+.edition-section-head{max-width:900px;margin-bottom:42px}
+.edition-whos .edition-section-head h2 span{color:rgba(242,239,232,.38)}
+.edition-whos .edition-section-head>p{color:rgba(242,239,232,.62)}
+.edition-whos-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:1px;
+  background:rgba(242,239,232,.14);
+  border:1px solid rgba(242,239,232,.14)
+}
+.edition-whos-grid article{
+  min-height:260px;
+  padding:26px;
+  background:#090909;
+  display:flex;
+  flex-direction:column
+}
+.edition-whos-grid span{
+  font-size:7px;
+  font-weight:950;
+  letter-spacing:.14em;
+  color:rgba(242,239,232,.36)
+}
+.edition-whos-grid strong{
+  margin:auto 0 12px;
+  font-size:clamp(28px,3vw,44px);
+  line-height:.9;
+  letter-spacing:-.04em
+}
+.edition-whos-grid p{
+  margin:0;
+  color:rgba(242,239,232,.6);
+  line-height:1.45
+}
+
+.edition-faq{background:#f2efe8;color:#050505}
+.edition-faq-grid{
+  display:grid;
+  grid-template-columns:minmax(220px,.55fr) minmax(0,1.45fr);
+  gap:72px;
+  align-items:start
+}
+.edition-faq .faq-list{
+  border-top:1px solid rgba(5,5,5,.18)
+}
+.edition-faq details{
+  border-bottom:1px solid rgba(5,5,5,.18)
+}
+.edition-faq summary{
+  padding:20px 0;
+  cursor:pointer;
+  font-weight:900
+}
+.edition-faq details p{
+  margin:0;
+  padding:0 0 20px;
+  max-width:720px;
+  color:rgba(5,5,5,.62);
+  line-height:1.55
+}
+
+.edition-follow{
+  background:#050505;
+  color:#f2efe8;
+  text-align:center
+}
+.edition-follow-inner{
+  max-width:930px;
+  display:flex;
+  flex-direction:column;
+  align-items:center
+}
+.edition-follow p:not(.section-kicker){
+  max-width:650px;
+  margin:0 0 28px;
+  color:rgba(242,239,232,.62);
+  line-height:1.55
+}
+
+@media(max-width:900px){
+  .edition-status-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .edition-mystery-grid,
+  .edition-faq-grid{grid-template-columns:1fr;gap:42px}
+  .edition-whos-grid{grid-template-columns:1fr}
+}
+@media(max-width:700px){
+  .edition-status,
+  .edition-mystery,
+  .edition-whos,
+  .edition-faq,
+  .edition-follow{padding:64px 0}
+  .edition-status-grid{grid-template-columns:1fr}
+  .edition-status article{min-height:170px}
+  .edition-mystery-copy h2,
+  .edition-section-head h2,
+  .edition-faq h2,
+  .edition-follow h2{font-size:46px}
+  .edition-mystery-visual{min-height:300px}
+  .edition-whos-grid article{min-height:210px;padding:22px}
+}
