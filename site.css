@@ -6621,3 +6621,27 @@ summary:focus-visible{
     grid-column:1 / -1;
   }
 }
+
+
+/* Uploaded Night Light Bazaar wordmark */
+.brand .brand-logo{
+  display:block;
+  width:auto;
+  height:40px;
+  max-width:180px;
+  object-fit:contain;
+}
+.footer-brand .brand-logo{
+  height:52px;
+  max-width:230px;
+}
+@media (max-width: 720px){
+  .brand .brand-logo{
+    height:32px;
+    max-width:145px;
+  }
+  .footer-brand .brand-logo{
+    height:44px;
+    max-width:195px;
+  }
+}
