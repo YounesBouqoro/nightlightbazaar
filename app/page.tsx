@@ -797,7 +797,7 @@ export default function Home() {
         <div className="shell footer-main-grid">
           <div className="footer-brand-block">
             <a className="brand footer-brand" href="#top" aria-label="Night Light Bazaar Startseite">
-              <span>NIGHT LIGHT<small>BAZAAR</small></span>
+              <img className="brand-logo" src="/night-light-bazaar-logo-white.png" alt="Night Light Bazaar" />
             </a>
             <h2>FOLLOW<br />THE NIGHT.</h2>
             <p>Düsseldorf&apos;s curated Night Vintage &amp; Lifestyle Market. Edition 01 coming soon.</p>
