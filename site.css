@@ -8024,3 +8024,108 @@ html,body{max-width:100%;overflow-x:clip}
     font-size:20px!important;
   }
 }
+
+
+/* Homepage rhythm + density QA v28 */
+.home-intro{padding:84px 0}
+.home-pillars{padding:82px 0}
+.home-edition{padding:88px 0}
+.home-paths{padding:78px 0}
+.home-social{padding:82px 0}
+
+.home-intro-grid{gap:56px}
+.home-section-head{margin-bottom:30px}
+.home-intro h2,
+.home-section-head h2,
+.home-edition h2,
+.home-path-card h2{
+  font-size:clamp(44px,5.4vw,82px);
+}
+.home-intro-copy p{font-size:clamp(15px,1.45vw,19px)}
+.home-intro-emphasis{margin-top:20px!important;padding-top:15px}
+
+.home-pillar-grid a{
+  min-height:300px;
+  padding:24px;
+}
+.home-pillar-grid h3{
+  font-size:clamp(30px,3.3vw,50px);
+}
+.home-pillar-grid p{
+  max-width:34ch;
+  font-size:14px;
+}
+.home-pillar-grid strong{margin-top:18px}
+
+.home-edition-grid{gap:54px}
+.home-edition>div>div:first-child>p:not(.section-kicker){
+  margin:20px 0 24px;
+  max-width:500px;
+}
+.home-edition-status article{
+  min-height:165px;
+  padding:20px;
+}
+.home-edition-status strong{
+  font-size:clamp(22px,2.2vw,34px);
+}
+
+.home-path-card{
+  min-height:370px;
+  padding:30px;
+}
+.home-path-card h2{
+  margin:auto 0 14px;
+}
+.home-path-card p{
+  margin:0;
+  font-size:14px;
+}
+.home-path-card strong{margin-top:20px}
+
+.home-social h2{
+  font-size:clamp(54px,7.6vw,112px);
+}
+.home-social p:not(.section-kicker){
+  margin:18px 0 24px;
+  max-width:560px;
+}
+
+@media(max-width:900px){
+  .home-intro,
+  .home-pillars,
+  .home-edition,
+  .home-paths,
+  .home-social{padding:64px 0}
+  .home-intro-grid,
+  .home-edition-grid{gap:34px}
+  .home-pillar-grid a{min-height:210px}
+  .home-path-card{min-height:290px}
+}
+
+@media(max-width:700px){
+  .home-intro,
+  .home-pillars,
+  .home-edition,
+  .home-paths,
+  .home-social{padding:52px 0}
+  .home-intro h2,
+  .home-section-head h2,
+  .home-edition h2,
+  .home-path-card h2{font-size:40px}
+  .home-section-head{margin-bottom:22px}
+  .home-pillar-grid a{
+    min-height:185px;
+    padding:20px;
+  }
+  .home-pillar-grid h3{font-size:32px}
+  .home-edition-status article{
+    min-height:132px;
+    padding:18px;
+  }
+  .home-path-card{
+    min-height:250px;
+    padding:22px;
+  }
+  .home-social h2{font-size:50px}
+}
