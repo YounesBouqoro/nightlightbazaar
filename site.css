@@ -7906,3 +7906,121 @@ summary:focus-visible{
 
 /* keep page width contained after adding horizontal mobile nav */
 html,body{max-width:100%;overflow-x:clip}
+
+
+/* Homepage first-impression polish v27 */
+.home-hero{
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+}
+.home-hero:before{
+  content:"";
+  position:absolute;
+  inset:8% 12% 10%;
+  z-index:-1;
+  pointer-events:none;
+  background:
+    radial-gradient(circle at 50% 43%,rgba(255,255,255,.11) 0 8%,rgba(255,255,255,.035) 19%,transparent 48%);
+  filter:blur(2px);
+}
+.home-hero:after{
+  content:"NLB / DUS / 01";
+  position:absolute;
+  right:18px;
+  bottom:18px;
+  z-index:1;
+  color:rgba(242,239,232,.28);
+  font-size:7px;
+  font-weight:950;
+  letter-spacing:.18em;
+  writing-mode:vertical-rl;
+  text-orientation:mixed;
+}
+.home-headline-stage{
+  position:relative;
+  z-index:2;
+}
+.home-hero-pitch{
+  width:min(720px,90%);
+  margin-inline:auto;
+  font-size:clamp(15px,1.7vw,22px);
+  line-height:1.45;
+  color:rgba(242,239,232,.76);
+  text-wrap:balance;
+}
+.home-hero .hero-status{
+  margin-top:18px;
+  border-color:rgba(242,239,232,.2);
+  background:rgba(5,5,5,.32);
+  backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);
+}
+.home-hero .hero-actions{
+  margin-top:18px;
+}
+.home-hero .hero-cta{
+  min-width:220px;
+  justify-content:space-between;
+}
+.home-hero .hero-cta-primary{
+  box-shadow:0 0 0 1px rgba(242,239,232,.04),0 12px 42px rgba(0,0,0,.25);
+}
+.home-intro{
+  position:relative;
+}
+.home-intro:before{
+  content:"01 / WHAT IS IT?";
+  position:absolute;
+  top:30px;
+  right:32px;
+  font-size:7px;
+  font-weight:950;
+  letter-spacing:.16em;
+  color:rgba(5,5,5,.28);
+}
+.home-intro-emphasis{
+  margin-top:26px!important;
+  padding-top:18px;
+  border-top:1px solid rgba(5,5,5,.16);
+  color:#050505!important;
+  font-size:clamp(18px,2vw,28px)!important;
+  line-height:1!important;
+  font-weight:950;
+  letter-spacing:-.035em;
+}
+.home-pillar-grid a{
+  transition:transform .2s ease,background .2s ease;
+}
+.home-pillar-grid a:hover{
+  transform:translateY(-4px);
+  background:#0d0d0d;
+}
+
+@media(max-width:700px){
+  .home-hero:after{
+    right:8px;
+    bottom:12px;
+    font-size:6px;
+  }
+  .home-hero-pitch{
+    width:100%;
+    font-size:15px;
+    line-height:1.42;
+  }
+  .home-hero .hero-status{
+    max-width:100%;
+    text-align:center;
+    line-height:1.35;
+  }
+  .home-hero .hero-cta{
+    min-width:0;
+    width:100%;
+  }
+  .home-intro:before{
+    display:none;
+  }
+  .home-intro-emphasis{
+    font-size:20px!important;
+  }
+}
