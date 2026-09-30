@@ -52,10 +52,7 @@ export default function Home() {
       <header className="nav-wrap">
         <nav className="nav shell" aria-label="Hauptnavigation">
           <a className="brand" href="#top" aria-label="Night Light Bazaar Startseite">
-            <span>
-              NIGHT LIGHT
-              <small>BAZAAR</small>
-            </span>
+            <img className="brand-logo" src="/night-light-bazaar-logo-white.png" alt="Night Light Bazaar" />
           </a>
 
           <div className="nav-links">
