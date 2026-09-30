@@ -7849,3 +7849,60 @@ summary:focus-visible{
   .partner-process-grid article{min-height:220px;padding:22px}
   .partner-value-list article{grid-template-columns:34px 1fr}
 }
+
+
+/* Cross-page mobile navigation + QA v26 */
+.mobile-site-nav{display:none}
+
+@media(max-width:1000px){
+  .mobile-site-nav{
+    position:sticky;
+    top:58px;
+    z-index:95;
+    width:100%;
+    display:flex;
+    gap:6px;
+    padding:8px 14px;
+    box-sizing:border-box;
+    overflow-x:auto;
+    overscroll-behavior-x:contain;
+    scrollbar-width:none;
+    background:rgba(5,5,5,.96);
+    border-bottom:1px solid rgba(242,239,232,.1);
+    backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px);
+  }
+  .mobile-site-nav::-webkit-scrollbar{display:none}
+  .mobile-site-nav a{
+    flex:0 0 auto;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-height:30px;
+    padding:0 12px;
+    border:1px solid rgba(242,239,232,.14);
+    color:rgba(242,239,232,.66);
+    font-size:7px;
+    font-weight:950;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    text-decoration:none;
+    white-space:nowrap;
+  }
+  .mobile-site-nav a.is-active{
+    background:#f2efe8;
+    color:#050505;
+    border-color:#f2efe8;
+  }
+  .subpage-hero{padding-top:82px}
+}
+
+@media(max-width:700px){
+  html{scroll-padding-top:104px}
+  .mobile-site-nav{top:58px}
+  .home-hero{min-height:calc(100svh - 96px)}
+  .home-hero-inner{min-height:calc(100svh - 96px)}
+}
+
+/* keep page width contained after adding horizontal mobile nav */
+html,body{max-width:100%;overflow-x:clip}
